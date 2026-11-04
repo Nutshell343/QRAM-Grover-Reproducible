@@ -1,0 +1,6 @@
+# Preserve the frozen bundle byte-for-byte: SHA256 includes line endings.
+* -text
+
+# These repository-only files use LF line endings.
+.gitattributes text eol=lf
+.gitignore text eol=lf
