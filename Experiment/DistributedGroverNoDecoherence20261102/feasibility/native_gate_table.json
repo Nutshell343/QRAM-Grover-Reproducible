@@ -1,0 +1,149 @@
+[
+  {
+    "role": "C",
+    "gate": "01_half",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 15.623204804566704,
+    "detuning_MHz": -0.19056132066818632,
+    "DRAG": 0.14440632892750213,
+    "F_e_subspace": 0.999999999248087,
+    "leakage_mean": 7.502766186107124e-10
+  },
+  {
+    "role": "C",
+    "gate": "01_pi",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 31.19510815870162,
+    "detuning_MHz": -1.0767206767157633,
+    "DRAG": 0.13411059907379258,
+    "F_e_subspace": 0.9999999710455367,
+    "leakage_mean": 2.89057722202557e-08
+  },
+  {
+    "role": "C",
+    "gate": "12_pi",
+    "duration_ns": 40.0,
+    "amplitude_MHz": 17.69209106769599,
+    "detuning_MHz": -0.5384082677979505,
+    "DRAG": 0.08215299964433133,
+    "F_e_subspace": 0.9999997954399489,
+    "leakage_mean": 2.0450384796699694e-07
+  },
+  {
+    "role": "I",
+    "gate": "01_half",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 15.62323581547753,
+    "detuning_MHz": -0.19054409671109163,
+    "DRAG": 0.1444091852751143,
+    "F_e_subspace": 0.9999999992488191,
+    "leakage_mean": 7.500337018129244e-10
+  },
+  {
+    "role": "I",
+    "gate": "01_pi",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 31.156307633429737,
+    "detuning_MHz": -1.3736898475677888,
+    "DRAG": 0.1492711171680899,
+    "F_e_subspace": 0.9999999947975855,
+    "leakage_mean": 5.202349662170036e-09
+  },
+  {
+    "role": "I",
+    "gate": "12_pi",
+    "duration_ns": 40.0,
+    "amplitude_MHz": 17.692086380272425,
+    "detuning_MHz": -0.5383689749137588,
+    "DRAG": 0.08214907113744657,
+    "F_e_subspace": 0.9999997954303907,
+    "leakage_mean": 2.0450370374902604e-07
+  },
+  {
+    "role": "L",
+    "gate": "01_half",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 15.62321639272631,
+    "detuning_MHz": -0.19053492000536748,
+    "DRAG": 0.1444029802819306,
+    "F_e_subspace": 0.9999999992493376,
+    "leakage_mean": 7.506251176181422e-10
+  },
+  {
+    "role": "L",
+    "gate": "01_pi",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 31.257108983127072,
+    "detuning_MHz": -0.507767807250381,
+    "DRAG": 0.10524297580554333,
+    "F_e_subspace": 0.9999998718486031,
+    "leakage_mean": 1.2649329039771118e-07
+  },
+  {
+    "role": "L",
+    "gate": "12_pi",
+    "duration_ns": 40.0,
+    "amplitude_MHz": 17.692085276224663,
+    "detuning_MHz": -0.5383986723992544,
+    "DRAG": 0.08215080867047084,
+    "F_e_subspace": 0.9999997954296078,
+    "leakage_mean": 2.0450373083846785e-07
+  },
+  {
+    "role": "R",
+    "gate": "01_half",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 15.623367399463904,
+    "detuning_MHz": -0.18009109341402507,
+    "DRAG": 0.14503981936982904,
+    "F_e_subspace": 0.999999997507705,
+    "leakage_mean": 2.4869037940078442e-09
+  },
+  {
+    "role": "R",
+    "gate": "01_pi",
+    "duration_ns": 32.0,
+    "amplitude_MHz": 31.27187454924761,
+    "detuning_MHz": -0.2960837499195885,
+    "DRAG": 0.09551417885772702,
+    "F_e_subspace": 0.9999998840847875,
+    "leakage_mean": 1.1584857395607884e-07
+  },
+  {
+    "role": "R",
+    "gate": "12_pi",
+    "duration_ns": 40.0,
+    "amplitude_MHz": 17.688586260998676,
+    "detuning_MHz": -0.5451099002723188,
+    "DRAG": 0.08562201637196289,
+    "F_e_subspace": 0.9999998609087959,
+    "leakage_mean": 1.3906277240849363e-07
+  },
+  {
+    "role": "C-I",
+    "gate": "CZ",
+    "duration_ns": 30.6418337830458,
+    "tuned_frequency_GHz": 4.818937693453563,
+    "ramp_ns": 5.7259299642229635,
+    "F_e_subspace": 0.9999999571326894,
+    "leakage_mean": 4.1967451402946665e-08
+  },
+  {
+    "role": "I-L",
+    "gate": "CZ",
+    "duration_ns": 56.37131052662326,
+    "tuned_frequency_GHz": 5.244278590867272,
+    "ramp_ns": 11.89451087283802,
+    "F_e_subspace": 0.9999999268935384,
+    "leakage_mean": 7.275709590359725e-08
+  },
+  {
+    "role": "I-R",
+    "gate": "CZ",
+    "duration_ns": 64.82045665163612,
+    "tuned_frequency_GHz": 5.259764008054265,
+    "ramp_ns": 16.5,
+    "F_e_subspace": 0.9999981984878694,
+    "leakage_mean": 3.82957288103114e-09
+  }
+]

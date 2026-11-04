@@ -1,0 +1,8 @@
+{
+  "basis_combinations": 128,
+  "encoded_branches": 256,
+  "legal_router_calls_checked": 2048,
+  "max_amplitude_error": 2.220446049250313e-16,
+  "auxiliary_reset": true,
+  "memory_unchanged_ideal": true
+}
