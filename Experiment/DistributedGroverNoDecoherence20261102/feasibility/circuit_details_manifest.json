@@ -1,0 +1,81 @@
+{
+  "scope": "Documentation export of saved coherent circuit feasibility data; no propagation or hardware execution",
+  "input_sha256": {
+    "../RouterPulseCalibration20261002/device.json": "28c13fd259ee0df69f8e3e1d1002f034da1e2eeeb433d782bc8a77248a482aa3",
+    "../RouterPulseCalibration20261002/results/native/native_parameters.json": "d0ea1be5701a8e8943f6070f3c0f85992d6e99179d9298ee52b1422a9bb1dcf7",
+    "../RouterPulseCalibration20261002/pulse_model.py": "3d18a853b8a798715b4eae87a2ec348801df28086ecc840b1031c9b77b8d361a",
+    "../LabRouterR5R6/router_r5_r6/protocol.py": "0df45c4235a8f9b735fb6dcdf368421c41bcd64a16b230c3d921edf62b607e61",
+    "../LabPartialCSWAPVZ4/partial_cswap_vz4/protocol.py": "1abc6ceb5bfe4264c9eb5283bbb66c150e98422fcb80e9ddf47139b41e3f30dc",
+    "../LabPartialCSWAPVZ4/partial_cswap_vz4/timing_plan.py": "1ffb5cc3d229b2f9646cc6c27a0622641e8c60450b24fd37cef71c8bf0dda80b",
+    "../DistributedGroverSimulation20261102/circuit.py": "aebb7a702942f5465ddba5a7e28169cb027ad596fb713578f44c5d5abf73a41b",
+    "../DistributedGroverSimulation20261102/model.py": "58fb2962ccbd12255e6e7737ac9281d2e2bc398c82313cdf47c935ce8589365d",
+    "feasibility_data.py": "d8a4701217356588d0bcdae899198d37acb12e46e3fb73f3d1d3ebbed3e4a91c",
+    "../RouterPulseCalibration20261002/results/lab_equivalent_runs/r5/down/pulse-L4-shots1000/parameters.json": "5b6c3da0eacd3eae7bc1b02fd32e26581bab0bc9df235088541a679816646e20",
+    "../RouterPulseCalibration20261002/results/lab_equivalent_runs/r5/up/pulse-L4-shots1000/parameters.json": "d8291db4ab5c57f8af7408cfd05bb92d1c20719a0c20eba6e877a07e924651ad",
+    "../RouterPulseCalibration20261002/results/lab_equivalent_runs/r6/down/pulse-L4-shots1000/parameters.json": "81540cf982f4f75c7012c50189f2a256f64a6a0d6250cceb68060974e2e7763b",
+    "../RouterPulseCalibration20261002/results/lab_equivalent_runs/r6/up/pulse-L4-shots1000/parameters.json": "b97c13149360a6f904613d884e82f08e8ca8abf6c2ba4ba813a568c62d85dc1e"
+  },
+  "saved_data_sha256": {
+    "feasibility/resources.json": "b112b30e99e233d7236ca99888f785a1b706de7d1db90d29f0eb983c046ea0ef",
+    "feasibility/metrics.json": "b9f18c2218791487423bf08b8704a84ffd31e639c669dc40888a5fec6f81021b",
+    "feasibility/checks.json": "d514017b8ec05487b7f440a9b4c67beb5cf64cc492c7cded069a261087addede",
+    "feasibility/SUMMARY.json": "c0e4cf51ef5bfea514bc46d383a75e9f71a97214123866344902bbbc479f493e",
+    "feasibility/schedule_2_r5.json": "6ccc898194cdd4919818712d21987e31e039c9d6ce6ad6abcd84a70550721713",
+    "feasibility/schedule_2_r6.json": "41988e16e281bff4f98d32684cb534478981e916e2947c614d3df7d07bb5042c"
+  },
+  "local_circuit_counts": {
+    "r5_down": {
+      "gate_counts": {
+        "01_pi": 2,
+        "12_pi": 3,
+        "01_half": 14,
+        "cz": 5,
+        "frame_01": 10,
+        "frame_12": 12,
+        "frame": 3
+      },
+      "physical_layers": 18,
+      "duration_ns": 713.0253681395646
+    },
+    "r5_up": {
+      "gate_counts": {
+        "frame": 3,
+        "01_half": 14,
+        "cz": 5,
+        "12_pi": 3,
+        "frame_01": 10,
+        "frame_12": 12,
+        "01_pi": 2
+      },
+      "physical_layers": 18,
+      "duration_ns": 713.0253681395645
+    },
+    "r6_down": {
+      "gate_counts": {
+        "01_half": 12,
+        "cz": 6,
+        "01_pi": 2,
+        "12_pi": 3,
+        "frame": 3
+      },
+      "physical_layers": 19,
+      "duration_ns": 769.3966786661879
+    },
+    "r6_up": {
+      "gate_counts": {
+        "frame": 3,
+        "01_half": 12,
+        "cz": 6,
+        "12_pi": 3,
+        "01_pi": 2
+      },
+      "physical_layers": 19,
+      "duration_ns": 769.3966786661878
+    }
+  },
+  "checked_saved_schedules": [
+    "schedule_2_r5.json",
+    "schedule_2_r6.json"
+  ],
+  "handbook_sha256": "29f9d5d6f0ffa521fa87b92694bd2346c98aa26402f22f702736da0493c46cae"
+}
