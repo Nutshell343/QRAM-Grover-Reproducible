@@ -1,0 +1,562 @@
+{
+  "1_r5": {
+    "n": 1,
+    "N": 2,
+    "scheme": "r5",
+    "quantum_mps_sites": 6,
+    "classical_memory_sites": 2,
+    "working_registers": 8,
+    "router_calls": 2,
+    "router_CZ": 10,
+    "query_ns": 5416.0507362791295,
+    "total_ns": 5416.0507362791295,
+    "stages": {
+      "prepare": {
+        "duration_ns": 32.0,
+        "layers": 1,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "address_load": {
+        "duration_ns": 1458.0,
+        "layers": 36,
+        "CZ": 12,
+        "cross_CZ": 3,
+        "single": 24
+      },
+      "data_encode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "data_load": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "data_down": {
+        "duration_ns": 713.0253681395646,
+        "layers": 18,
+        "CZ": 5,
+        "cross_CZ": 0,
+        "single": 19
+      },
+      "memory_access": {
+        "duration_ns": 50.0,
+        "layers": 1,
+        "CZ": 2,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "data_up": {
+        "duration_ns": 713.0253681395645,
+        "layers": 18,
+        "CZ": 5,
+        "cross_CZ": 0,
+        "single": 19
+      },
+      "data_return": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "address_unload": {
+        "duration_ns": 1458.0,
+        "layers": 36,
+        "CZ": 12,
+        "cross_CZ": 3,
+        "single": 24
+      },
+      "data_decode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      }
+    },
+    "counts": {
+      "single": 102,
+      "CZ": 42,
+      "cross_CZ": 12
+    },
+    "CZ_depth": 41,
+    "physical_layers": 132
+  },
+  "2_r5": {
+    "n": 2,
+    "N": 4,
+    "scheme": "r5",
+    "quantum_mps_sites": 13,
+    "classical_memory_sites": 4,
+    "working_registers": 17,
+    "router_calls": 8,
+    "router_CZ": 40,
+    "query_ns": 11184.152208837388,
+    "total_ns": 11426.152208837386,
+    "stages": {
+      "prepare": {
+        "duration_ns": 32.0,
+        "layers": 1,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "address_load": {
+        "duration_ns": 3629.0253681395648,
+        "layers": 90,
+        "CZ": 32,
+        "cross_CZ": 6,
+        "single": 73
+      },
+      "data_encode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "data_load": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "data_down": {
+        "duration_ns": 1426.0507362791293,
+        "layers": 36,
+        "CZ": 15,
+        "cross_CZ": 0,
+        "single": 57
+      },
+      "memory_access": {
+        "duration_ns": 50.0,
+        "layers": 1,
+        "CZ": 4,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "data_up": {
+        "duration_ns": 1426.0507362791293,
+        "layers": 36,
+        "CZ": 15,
+        "cross_CZ": 0,
+        "single": 57
+      },
+      "data_return": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "address_unload": {
+        "duration_ns": 3629.0253681395643,
+        "layers": 90,
+        "CZ": 32,
+        "cross_CZ": 6,
+        "single": 73
+      },
+      "data_decode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "diffusion": {
+        "duration_ns": 242.0,
+        "layers": 7,
+        "CZ": 1,
+        "cross_CZ": 0,
+        "single": 12
+      }
+    },
+    "counts": {
+      "single": 288,
+      "CZ": 105,
+      "cross_CZ": 18
+    },
+    "CZ_depth": 86,
+    "physical_layers": 283
+  },
+  "3_r5": {
+    "n": 3,
+    "N": 8,
+    "scheme": "r5",
+    "quantum_mps_sites": 26,
+    "classical_memory_sites": 8,
+    "working_registers": 34,
+    "router_calls": 22,
+    "router_CZ": 110,
+    "query_ns": 18378.304417674775,
+    "total_ns": 18378.30441767477,
+    "stages": {
+      "prepare": {
+        "duration_ns": 32.0,
+        "layers": 1,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "address_load": {
+        "duration_ns": 6513.076104418693,
+        "layers": 162,
+        "CZ": 68,
+        "cross_CZ": 9,
+        "single": 172
+      },
+      "data_encode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "data_load": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "data_down": {
+        "duration_ns": 2139.076104418694,
+        "layers": 54,
+        "CZ": 35,
+        "cross_CZ": 0,
+        "single": 133
+      },
+      "memory_access": {
+        "duration_ns": 50.0,
+        "layers": 1,
+        "CZ": 8,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "data_up": {
+        "duration_ns": 2139.076104418694,
+        "layers": 54,
+        "CZ": 35,
+        "cross_CZ": 0,
+        "single": 133
+      },
+      "data_return": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "address_unload": {
+        "duration_ns": 6513.076104418694,
+        "layers": 162,
+        "CZ": 68,
+        "cross_CZ": 9,
+        "single": 172
+      },
+      "data_decode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      }
+    },
+    "counts": {
+      "single": 626,
+      "CZ": 220,
+      "cross_CZ": 24
+    },
+    "CZ_depth": 139,
+    "physical_layers": 456
+  },
+  "1_r6": {
+    "n": 1,
+    "N": 2,
+    "scheme": "r6",
+    "quantum_mps_sites": 6,
+    "classical_memory_sites": 2,
+    "working_registers": 8,
+    "router_calls": 2,
+    "router_CZ": 12,
+    "query_ns": 5528.793357332375,
+    "total_ns": 5528.793357332376,
+    "stages": {
+      "prepare": {
+        "duration_ns": 32.0,
+        "layers": 1,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "address_load": {
+        "duration_ns": 1458.0,
+        "layers": 36,
+        "CZ": 12,
+        "cross_CZ": 3,
+        "single": 24
+      },
+      "data_encode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "data_load": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "data_down": {
+        "duration_ns": 769.3966786661879,
+        "layers": 19,
+        "CZ": 6,
+        "cross_CZ": 0,
+        "single": 17
+      },
+      "memory_access": {
+        "duration_ns": 50.0,
+        "layers": 1,
+        "CZ": 2,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "data_up": {
+        "duration_ns": 769.3966786661878,
+        "layers": 19,
+        "CZ": 6,
+        "cross_CZ": 0,
+        "single": 17
+      },
+      "data_return": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "address_unload": {
+        "duration_ns": 1458.0,
+        "layers": 36,
+        "CZ": 12,
+        "cross_CZ": 3,
+        "single": 24
+      },
+      "data_decode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      }
+    },
+    "counts": {
+      "single": 98,
+      "CZ": 44,
+      "cross_CZ": 12
+    },
+    "CZ_depth": 43,
+    "physical_layers": 134
+  },
+  "2_r6": {
+    "n": 2,
+    "N": 4,
+    "scheme": "r6",
+    "quantum_mps_sites": 13,
+    "classical_memory_sites": 4,
+    "working_registers": 17,
+    "router_calls": 8,
+    "router_CZ": 48,
+    "query_ns": 11522.380071997126,
+    "total_ns": 11764.380071997126,
+    "stages": {
+      "prepare": {
+        "duration_ns": 32.0,
+        "layers": 1,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "address_load": {
+        "duration_ns": 3685.396678666188,
+        "layers": 91,
+        "CZ": 33,
+        "cross_CZ": 6,
+        "single": 71
+      },
+      "data_encode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "data_load": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "data_down": {
+        "duration_ns": 1538.7933573323758,
+        "layers": 38,
+        "CZ": 18,
+        "cross_CZ": 0,
+        "single": 51
+      },
+      "memory_access": {
+        "duration_ns": 50.0,
+        "layers": 1,
+        "CZ": 4,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "data_up": {
+        "duration_ns": 1538.7933573323758,
+        "layers": 38,
+        "CZ": 18,
+        "cross_CZ": 0,
+        "single": 51
+      },
+      "data_return": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "address_unload": {
+        "duration_ns": 3685.3966786661877,
+        "layers": 91,
+        "CZ": 33,
+        "cross_CZ": 6,
+        "single": 71
+      },
+      "data_decode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "diffusion": {
+        "duration_ns": 242.0,
+        "layers": 7,
+        "CZ": 1,
+        "cross_CZ": 0,
+        "single": 12
+      }
+    },
+    "counts": {
+      "single": 272,
+      "CZ": 113,
+      "cross_CZ": 18
+    },
+    "CZ_depth": 92,
+    "physical_layers": 289
+  },
+  "3_r6": {
+    "n": 3,
+    "N": 8,
+    "scheme": "r6",
+    "quantum_mps_sites": 26,
+    "classical_memory_sites": 8,
+    "working_registers": 34,
+    "router_calls": 22,
+    "router_CZ": 132,
+    "query_ns": 19054.760143994252,
+    "total_ns": 19054.760143994252,
+    "stages": {
+      "prepare": {
+        "duration_ns": 32.0,
+        "layers": 1,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "address_load": {
+        "duration_ns": 6682.190035998563,
+        "layers": 165,
+        "CZ": 72,
+        "cross_CZ": 9,
+        "single": 164
+      },
+      "data_encode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      },
+      "data_load": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "data_down": {
+        "duration_ns": 2308.1900359985634,
+        "layers": 57,
+        "CZ": 42,
+        "cross_CZ": 0,
+        "single": 119
+      },
+      "memory_access": {
+        "duration_ns": 50.0,
+        "layers": 1,
+        "CZ": 8,
+        "cross_CZ": 0,
+        "single": 0
+      },
+      "data_up": {
+        "duration_ns": 2308.190035998564,
+        "layers": 57,
+        "CZ": 42,
+        "cross_CZ": 0,
+        "single": 119
+      },
+      "data_return": {
+        "duration_ns": 432.0,
+        "layers": 9,
+        "CZ": 3,
+        "cross_CZ": 3,
+        "single": 6
+      },
+      "address_unload": {
+        "duration_ns": 6682.190035998564,
+        "layers": 165,
+        "CZ": 72,
+        "cross_CZ": 9,
+        "single": 164
+      },
+      "data_decode": {
+        "duration_ns": 64.0,
+        "layers": 2,
+        "CZ": 0,
+        "cross_CZ": 0,
+        "single": 2
+      }
+    },
+    "counts": {
+      "single": 582,
+      "CZ": 242,
+      "cross_CZ": 24
+    },
+    "CZ_depth": 151,
+    "physical_layers": 468
+  }
+}

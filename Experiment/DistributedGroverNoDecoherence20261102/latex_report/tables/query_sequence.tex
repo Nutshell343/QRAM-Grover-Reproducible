@@ -1,0 +1,28 @@
+{\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}r p{.44\linewidth} p{.43\linewidth}@{}}
+\caption{完整query的宏观时间顺序}\label{tab:querysequence}\\\toprule
+步 & 操作（时间由上到下） & 目的与约束\\\midrule\endfirsthead
+\multicolumn{3}{c}{续表：完整query的宏观时间顺序}\\\toprule
+步 & 操作（时间由上到下） & 目的与约束\\\midrule\endhead
+\midrule\multicolumn{3}{r}{下页续}\endfoot
+\bottomrule\endlastfoot
+1 & $G(A_0)$ & 地址高位到根输入，D恢复\\
+2 & $S_{T_0C_0}$ & 高位存入根控制，根输入回0\\
+3 & $G(A_1)$ & 低位到根输入，D恢复\\
+4 & 根router down & 按根控制把低位送至左右子输入\\
+5 & $S_{T_1C_1}\parallel S_{T_2C_2}$ & 保存低位，两输入端口回0\\
+6 & $H_D=Y_{01}^{(D)}/2\to X_{01}^{(D)}$ & 将异或读取转为相位形式\\
+7 & $S_{DT_0}$ & 数据进入根；跨片\\
+8 & 根router down & 选择左右子树\\
+9 & 左down $\parallel$ 右down & 数据至对应叶端\\
+10 & $\prod_j\CZ(L_j,M_j)$（四门并行） & 固定访问：只有被寻址叶端携带数据\\
+11 & 左up $\parallel$ 右up & 数据返至子输入，叶端恢复\\
+12 & 根router up & 数据返回根输入\\
+13 & $S_{DT_0}$ & 数据返回QPU；跨片\\
+14 & $S_{T_1C_1}\parallel S_{T_2C_2}$ & 取出低位，子控制恢复\\
+15 & 根router up & 低位返回根输入\\
+16 & $G(A_1)$ & 恢复A1\\
+17 & $S_{T_0C_0}$ & 取出高位，根控制恢复\\
+18 & $G(A_0)$ & 恢复A0，临时树回零\\
+19 & $H_D=Y_{01}^{(D)}/2\to X_{01}^{(D)}$ & 解码为异或query\\
+\end{longtable}}

@@ -1,0 +1,86 @@
+[
+  {
+    "scheme": "r5",
+    "direction": "down",
+    "levels": 4,
+    "dt_ns": 0.1,
+    "Fe": 0.9956992145794366
+  },
+  {
+    "scheme": "r5",
+    "direction": "up",
+    "levels": 4,
+    "dt_ns": 0.1,
+    "Fe": 0.9955956329986007
+  },
+  {
+    "scheme": "r6",
+    "direction": "down",
+    "levels": 4,
+    "dt_ns": 0.1,
+    "Fe": 0.9955163693304406
+  },
+  {
+    "scheme": "r6",
+    "direction": "up",
+    "levels": 4,
+    "dt_ns": 0.1,
+    "Fe": 0.9955598423661675
+  },
+  {
+    "scheme": "r5",
+    "direction": "down",
+    "levels": 4,
+    "dt_ns": 0.05,
+    "Fe": 0.9956984412165016
+  },
+  {
+    "scheme": "r5",
+    "direction": "up",
+    "levels": 4,
+    "dt_ns": 0.05,
+    "Fe": 0.9955947672775068
+  },
+  {
+    "scheme": "r6",
+    "direction": "down",
+    "levels": 4,
+    "dt_ns": 0.05,
+    "Fe": 0.9955151201365104
+  },
+  {
+    "scheme": "r6",
+    "direction": "up",
+    "levels": 4,
+    "dt_ns": 0.05,
+    "Fe": 0.9955592521266714
+  },
+  {
+    "scheme": "r5",
+    "direction": "down",
+    "levels": 5,
+    "dt_ns": 0.05,
+    "Fe": 0.9956933282034195
+  },
+  {
+    "scheme": "r5",
+    "direction": "up",
+    "levels": 5,
+    "dt_ns": 0.05,
+    "Fe": 0.9955876561451057
+  },
+  {
+    "scheme": "r6",
+    "direction": "down",
+    "levels": 5,
+    "dt_ns": 0.05,
+    "Fe": 0.9955143017111837
+  },
+  {
+    "scheme": "r6",
+    "direction": "up",
+    "levels": 5,
+    "dt_ns": 0.05,
+    "Fe": 0.9955553579158012
+  }
+]

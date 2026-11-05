@@ -1,0 +1,72 @@
+% UTF-8; compile with XeLaTeX or Tectonic (XeTeX).
+\documentclass[UTF8,fontset=fandol,11pt,a4paper]{ctexart}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{graphicx,xcolor,booktabs,array,tabularx,longtable}
+\usepackage{caption,placeins,fancyhdr,enumitem}
+\usepackage[unicode,colorlinks,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={从部分受控交换到QRAM查询：线路可行性与相干脉冲验证},pdfauthor={TCG}}
+\graphicspath{{images/}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{.25em}
+\setlength{\emergencystretch}{2em}
+\linespread{1.23}
+\captionsetup{font=small,labelfont=bf,labelsep=quad}
+\setlist{nosep,topsep=.5em,leftmargin=2.2em}
+\renewcommand{\arraystretch}{1.23}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small QRAM与分布式Grover}
+\fancyhead[R]{\small 线路可行性与相干脉冲验证}
+\fancyfoot[C]{\thepage}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\proj}[1]{\ket{#1}\!\bra{#1}}
+\newcommand{\tr}{\operatorname{Tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\CZ}{\mathrm{CZ}}
+\newcommand{\Fe}{F_{\mathrm e}}
+\newcommand{\seq}{\;\longrightarrow\;}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\datafig}[3]{\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{#1.pdf}
+\caption{#2}\label{#3}\end{figure}}
+\input{tables/data.tex}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}\centering
+\vspace*{2cm}
+{\Huge\bfseries 从部分受控交换到QRAM查询\par}
+\vspace{.8cm}{\LARGE 线路可行性与相干脉冲验证\par}
+\vspace{.6cm}{\Large R5/R6节点、固定数据库访问与单轮Grover\par}
+\vspace{1.5cm}
+\begin{minipage}{.88\linewidth}\large
+本报告依次回答：查询目标是什么；现有门集能否构造节点；部分节点的入口约束在整树中是否成立；真实脉冲的高能级相位怎样影响组合；最终查询和Grover是否保留正确相干关系。
+
+公式使用原生\LaTeX{}排版。数据图来自已保存的相干仿真，参数、完整单门序列和图像随工程提供。
+\end{minipage}
+\vfill{\large 2026年11月2日\par}
+\vspace{.5cm}{\small 模拟研究，不是真机结果。主结果不含耗散、附加随机门错误或测量误差。\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\section*{先读这一页：结论与阅读顺序}
+\addcontentsline{toc}{section}{先读这一页：结论与阅读顺序}
+在规定的空端口入口下，R5与R6均能由CZ、01半门、01与12的$\pi$门及虚拟参考帧实现正确路由。按本文顺序连接地址加载、下行、固定存储访问与相干恢复，理想原生矩阵检查通过全部16种数据库；完整查询矩阵最大振幅误差为$\IdealError$。
+
+冻结局域脉冲导出的整机相干基线中，R5/R6四目标平均原始Grover成功率为\RfiveGrover{}与\RsixGrover{}，16数据库平均查询$\Fe$为\RfiveFe{}与\RsixFe{}。这支持参考线路的相干组合可行性，不等于真实17位器件已有同等性能。
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}p{.19\linewidth}XX@{}}\toprule
+证据 & 回答的问题 & 本报告范围\\\midrule
+理想原生门 & 逻辑结构是否正确 & 展开节点与接口门，检查完整复数查询矩阵\\
+局域四能级脉冲 & 高能级相位与人口能否控制 & 同一门库的下行、上行、实际往返与消融\\
+整树模块过程 & 节点能否组合成查询和算法 & 13个量子站点加4个基态存储条件变量\\
+完整真实器件 & 所有共享端口与跨片门是否成立 & 尚待真实拓扑和各节点门库补齐\\\bottomrule
+\end{tabularx}\end{center}
+阅读顺序是“目标与门集---节点机制---完整查询---脉冲模型---逐层验证---算法闭环---资源与边界”。逐门相位放在附录，避免打断主线。所有时间箭头均从左向右，矩阵乘积仍由右侧先作用。
+\tableofcontents\clearpage
+\input{sections/01_circuit.tex}
+\input{sections/02_model.tex}
+\input{sections/03_validation.tex}
+\input{sections/04_conclusion.tex}
+\clearpage\appendix
+\input{sections/05_appendices.tex}
+\end{document}

@@ -1,0 +1,77 @@
+\section{再检查完整query：先功能，后诊断}\label{sec:network}
+\subsection{人口与含相位矩阵一起看}
+对$M=0010$，理想矩阵已在式\eqref{eq:matrixexample}写明。图\ref{fig:truth8}迹掉所有临时树，展示输出人口；图\ref{fig:k0}展示真实辅助零分支的复数操作块
+\begin{equation}\label{eq:K0}
+ K_0=P_{AD,01}\bra0_{\mathcal R}U_m\ket0_{\mathcal R}P_{AD,01}.
+\end{equation}
+前者不要求辅助回零，后者保留返回分支的原始幅度与相位。二者来自同一次传播。$K_0$通常不酉：投影后概率去了其他Kraus块，不能将每列归一化来掩盖损失。
+\datafig{24_query_truth}{计算基$8\times8$人口矩阵，行输出、列输入，迹掉全部辅助态。它接近目标仍不能证明相位正确。}{fig:truth8}
+\datafig{23_query_matrix}{同一次query的$K_0$实、虚部，只去掉公共全局相位，不按列归一。实部色标约$\pm1$，虚部约$\pm0.08$，颜色深浅不能直接跨图比较量级。}{fig:k0}
+
+\subsection{全部数据库与完整输入通道}
+16数据库均用固定线路。图\ref{fig:querystates}先给9种地址入口、$D=0$的联合态重叠。为覆盖未逐一展示的所有复数输入，再使用三输入Choi态。
+\datafig{20_query_states}{16数据库与9地址入口的原始联合态重叠，无后选择和计算块重归一。色标从0.9开始以显示相干残差。}{fig:querystates}
+将三输入AD与数学参考制备最大纠缠，经query后迹掉树；取AD输出01块为J，定义
+\begin{equation}\label{eq:Fe}
+\begin{aligned}
+ \ket{\Phi_8}&=\frac1{\sqrt8}\sum_{x=0}^7\ket{x,x},\qquad
+ \ket{\Phi_{Q_m}}=(I\otimes Q_m)\ket{\Phi_8},\\
+ \Fe&=\bra{\Phi_{Q_m}}J\ket{\Phi_{Q_m}}.
+\end{aligned}
+\end{equation}
+参考只是数学工具，不计入硬件位数。R5/R6平均原始$\Fe$为\RfiveFe{}与\RsixFe{}，它比某个算法输入成功更全面。
+\datafig{21_query_process}{完整query的原始$\Fe$、辅助全0概率与条件Choi重叠。条件值只用于诊断，不能替代原始确定性性能。}{fig:queryprocess}
+辅助零Choi块记为$J_0$，接受率$P_0=\tr J_0$，条件Choi重叠为$\Fe^{(0)}/P_0$。应分开报告原始、接受率和条件值；逐数据库归一后取平均，也不能用几个均值相乘代替联合概率。
+
+\subsection{剩余误差落在哪些分支}
+令$S=\tr J$为AD计算空间生存率，$\Fe^{(0)}=\bra{\Phi_{Q_m}}J_0\ket{\Phi_{Q_m}}$，则
+\begin{equation}\label{eq:errorpartition}
+\begin{aligned}
+1-\Fe={}&\underbrace{1-S}_{\text{AD计算空间外}}
++\underbrace{S-P_0-(\Fe-\Fe^{(0)})}_{\text{辅助非零分支内不匹配}}\\
+&+\underbrace{P_0-\Fe^{(0)}}_{\text{辅助零分支内不匹配}}.
+\end{aligned}
+\end{equation}
+这是非负通道分解（浮点误差除外），不是人为设定门错误概率。R5后两项约1.953与0.063个百分点，R6约1.541与0.151个百分点。主要残差落在辅助恢复，但不能据此认定某一个X12是源头；非零辅助也可能是错误01态。
+\datafig{22_coherent_residual}{相干残差分解。AD泄露接近零部分来自模块外理想01延拓，不能解释成真机泄露已经解决。}{fig:budget}
+\datafig{33_layer_tracking}{同一query的阶段末人口，数据库0010、地址$\ket{++}$、数据$\ket-$。中途控制激发与端口2态可属设计，关键是解码后恢复。它用于定位异常阶段，不直接确定物理机制。}{fig:tracking}
+
+\subsection{末端虚拟Z能修到什么程度}
+只在辅助0且D返回$\ket-$的分支，扣去理想数据库标记，定义四个地址残余相位$\epsilon_a$。两个末端地址局域Z不能改变
+\begin{equation}
+ \Delta=\epsilon_{00}-\epsilon_{01}-\epsilon_{10}+\epsilon_{11}\pmod{2\pi}.
+\end{equation}
+非零$\Delta$提示该返回分支有非局域相位。该诊断不能把原始混合输出硬解释成四个相位；末端对角帧也不能提高辅助回零概率。中间驱动轴可能改变返回干涉，需重新检查完整过程。
+\datafig{25_phase_invariant}{返回分支的相位不变量：先投影辅助0、D负号态，再扣除理想标记。它对两个地址末端Z不变。}{fig:invariant}
+\FloatBarrier
+
+\section{最后闭合算法：从相干查询到Grover}\label{sec:algorithm}
+\subsection{先用GHZ检验跨地址相干}
+地址制备$(\ket{00}+\ket{11})/\sqrt2$、D为0、数据库0101，目标AD为
+\begin{equation}
+ \ket{\mathrm{GHZ}}=\frac{\ket{000}+\ket{111}}{\sqrt2}.
+\end{equation}
+除了两个角点人口，$\rho_{000,111}$也必须保留。原始目标重叠为R5的\RfiveGHZ{}与R6的\RsixGHZ{}。
+\datafig{30_GHZ}{原始AD的GHZ密度矩阵。非对角角点检验相干，虚部显示相对相位。未后选择，也不含实验准备和分析误差。}{fig:ghz}
+
+\subsection{相位回踢与扩散}
+数据$\ket-=(\ket0-\ket1)/\sqrt2$满足$X\ket-=-\ket-$，所以同一query实现
+\begin{equation}
+ Q_m\ket{a,-}=(-1)^{m_a}\ket{a,-}.
+\end{equation}
+均匀地址$\ket s=\ket{++}$经相位oracle和$2\ket s\bra s-I$后，四选一理想搜索一轮即到目标。当前扩散的时间顺序是
+\begin{equation}\label{eq:diffusion}
+\begin{aligned}
+ &(H_{A_0}\parallel H_{A_1})\seq(X_{A_0}\parallel X_{A_1})\seq\CZ_{A_0A_1}\\
+ &\seq(X_{A_0}\parallel X_{A_1})\seq(H_{A_0}\parallel H_{A_1}).
+\end{aligned}
+\end{equation}
+每个H按式\eqref{eq:h}展开；该序列与标准扩散只差公共负号。
+\datafig{32_algorithm_stages}{R5目标10：入口、query后、扩散后。oracle主要改变目标相关相干符号，人口仍近似均匀；扩散再将符号差转为目标人口。来自同一次传播，计算块未另归一。}{fig:algorithmstages}
+
+\subsection{四目标同线路验证}
+四个任务只改数据库为1000、0100、0010、0001，query和扩散相同。平均原始地址成功率为\RfiveGrover{}与\RsixGrover{}。表\ref{tab:grover}同时保留辅助零接受率、条件成功与联合正确比例。
+\input{tables/grover.tex}
+\datafig{31_Grover}{四目标原始Grover人口，行是标记地址，列是实际输出地址。没有shots抽样、读出分类或附加随机门事件，只支持该参考过程的单轮功能。}{fig:grover}
+本次输入$\ket{++,-}$与数据库直接初始化。真实准备、复位和读出脉冲未评估，资源也应另加，不能将这里的成功率称为完整实验保真度。
+\FloatBarrier

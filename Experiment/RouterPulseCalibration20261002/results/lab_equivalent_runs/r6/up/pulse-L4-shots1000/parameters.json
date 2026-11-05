@@ -1,0 +1,21 @@
+{
+  "scheme": "r6",
+  "direction": "up",
+  "bits": [
+    "q111",
+    "q121",
+    "q130",
+    "q112"
+  ],
+  "paired": null,
+  "angles": {
+    "c": 2.1142720857091493,
+    "l": -0.14381783043165802,
+    "r": 3.0067455533311285
+  },
+  "frame_position": "input c/l/r",
+  "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r6\\up\\pulse-L4-shots1000\\frozen\\readout_calibration.json",
+  "run_config_sha256": "36f501a0facab3dd4465b5233601de467de48c82e93ee3eafa31cd4f8e499b46",
+  "completed_utc": "2026-10-02T06:43:47.014176+00:00",
+  "up_coherence_scope": "matched down-prepared roundtrip, not isolated up fidelity"
+}

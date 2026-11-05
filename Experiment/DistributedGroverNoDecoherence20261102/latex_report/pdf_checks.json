@@ -1,0 +1,15 @@
+{
+  "pages": 33,
+  "fixed_missing_ToUnicode_fonts": [
+    "/IHAIZV+FandolSong-Bold-Identity-H",
+    "/IXFAWU+FandolSong-Regular-Identity-H"
+  ],
+  "native_content_streams_unchanged": true,
+  "Chinese_text_copy_verified": true,
+  "sha256": "58236a7937f2e357bb6efe8e7a4980ae4dfd5e22eb55671cfc3794b92b622075",
+  "vector_figures": 25,
+  "TeX_layout_warnings": 0,
+  "source_inputs_verified": true,
+  "relative_asset_links_verified": true,
+  "visually_reviewed_pages": 33
+}

@@ -1,0 +1,191 @@
+\section{先定义任务：正确不只是读出一个比特}\label{sec:task}
+两地址位$A_0,A_1$组成$a\in\{00,01,10,11\}$，$D$是外部数据位。四个存储位按地址次序制备为经典基态$\ket m_M=\ket{m_{00}m_{01}m_{10}m_{11}}$。临时路由寄存器记为$\mathcal R$，目标查询为
+\begin{equation}\label{eq:querygoal}
+ Q_m\ket a_A\ket d_D\ket0_{\mathcal R}\ket m_M
+ =\ket a_A\ket{d\oplus m_a}_D\ket0_{\mathcal R}\ket m_M.
+\end{equation}
+这必须对任意输入的线性叠加成立。地址分支之间不能多出未知相位，临时树也不能留下“走过哪条路”的记录，否则计算基读出正确仍可能无法完成干涉算法。
+
+因此本报告同时检查：人口是否按目标置换；复数相位是否正确；临时寄存器是否恢复。人口真值表只覆盖第一项。本轮关闭$T_1/T_2$耗散、附加随机门错误、准备翻转、读出混淆和有限shots重建，但保留冻结脉冲的非理想旋转、高能级相位与相干泄露。所有密度矩阵由传播直接得到，不是假装已完成实验QST。
+
+\section{从允许门集到部分router}\label{sec:native}
+\subsection{单门的相位与原生展开}
+四线次序统一为$C,I,L,R$，依次是控制、输入、左输出、右输出。目标跃迁$\ket j,\ket{j+1}$内采用
+\begin{equation}\label{eq:rotation}
+ R_{j,j+1}(\theta,\phi)=\begin{pmatrix}
+ \cos(\theta/2)&-i e^{-i\phi}\sin(\theta/2)\\
+ -i e^{i\phi}\sin(\theta/2)&\cos(\theta/2)
+ \end{pmatrix}.
+\end{equation}
+$X_{01}(\phi)=R_{01}(\pi,\phi)$，$X_{01}/2(\phi)=R_{01}(\pi/2,\phi)$，$X_{12}(\phi)=R_{12}(\pi,\phi)$。未写轴时名义相位为0，$\pm Y_{01}/2$对应$\phi=\pm\pi/2$。
+
+$\pi$门在被驱动块中是$-iX$；若第三能级旁路，$-i$未必是整条线路的全局相位，不能粗略把所有X当成无相位置换。
+
+只有CZ是原生两比特门。CNOT时间顺序为
+\begin{equation}\label{eq:cnot}
+ -Y_{01}^{(b)}/2\seq\CZ(a,b)\seq+Y_{01}^{(b)}/2,
+ \qquad C_{a\to b}=R_y^{(b)}(\pi/2)\CZ_{ab}R_y^{(b)}(-\pi/2).
+\end{equation}
+实际CZ和单门的原生相位补偿由编译器累计到帧，不能只取裸波形而省去补偿。
+
+接收端已知为0时，两CNOT搬运为
+\begin{equation}\label{eq:transfer}
+ T_{a\to b}: C_{a\to b}\seq C_{b\to a},\qquad
+ T_{a\to b}\ket{\psi,0}=\ket{0,\psi},
+\end{equation}
+用2个CZ和4个半门。若两端未知，完整01空间SWAP应为
+\begin{equation}\label{eq:swap}
+ S_{ab}: C_{a\to b}\seq C_{b\to a}\seq C_{a\to b},
+\end{equation}
+用3个CZ和6个半门；它不表示任意qutrit交换。外部H也实际展开：
+\begin{equation}\label{eq:h}
+ +Y_{01}/2\seq X_{01},\qquad R_x(\pi)R_y(\pi/2)=-iH\quad\text{（01空间）}.
+\end{equation}
+异位单门可并行，不相交CZ可并行，但单门层与CZ层隔离。虚拟参考帧不占脉冲时间，更新顺序仍决定后续轴。
+\datafig{00_native_primitives}{CNOT、H和完整01空间SWAP的原生展开。X是原生$X_{01}$，没有拆成两个半门；CZ列与单门列隔离。}{fig:primitives}
+
+\subsection{节点只需在规定入口上正确}
+下行只要求$L=R=0$时
+\begin{equation}\label{eq:router}
+ U_{\downarrow}\ket{c,i,0,0}=
+ \begin{cases}\ket{0,0,i,0},&c=0,\\\ket{1,0,0,i},&c=1.\end{cases}
+\end{equation}
+四列合法入口与四行目标像之间，理想矩阵是
+\begin{equation}
+\begin{array}{c|cccc}
+ &0000&0100&1000&1100\\\hline
+0000&1&0&0&0\\0010&0&1&0&0\\1000&0&0&1&0\\1001&0&0&0&1
+\end{array}.
+\end{equation}
+这是四维子空间的等距映射，不是对所有16个计算基入口定义的通用受控交换。上行需在该像空间上恢复原入口及相位。整树能用它，前提是每次调用始终满足入口约束。
+\FloatBarrier
+
+\section{R5与R6怎样处理临时2态}\label{sec:routers}
+\subsection{R5：编码后分别搬运}
+先定义
+\begin{equation}\label{eq:encoder}
+ E:X_{01}(I)\seq X_{12}(I)\seq C_{C\to I}\seq X_{12}(I)\seq X_{01}(I).
+\end{equation}
+R5下行按时间执行
+\begin{equation}\label{eq:r5down}
+\begin{aligned}
+ &E\seq V_{\downarrow}(I)\seq T_{I\to L}\seq V_{\downarrow}^{\dagger}(L)\\
+ &\seq X_{12}(I)\seq T_{I\to R}\seq F_{\rm out}.
+\end{aligned}
+\end{equation}
+$V$的目标012作用是$V\oplus1$，允许公共全局相位。它由两个01半门和两跃迁帧展开，不增加CZ。编码用1个CNOT，两次搬运各2个，合计5个CZ。
+
+暂取理想CZ的高能级旁路为恒等、$V=I$，保留$\pi$门相位，路径如下：
+\begin{center}\small\begin{tabular}{@{}cccc@{}}\toprule
+入口CI & 编码后CI & 左搬运后CILR & 右搬运后CILR\\\midrule
+$00$ & $+\ket{00}$ & $+\ket{0000}$ & $+\ket{0000}$\\
+$01$ & $-\ket{01}$ & $-\ket{0010}$ & $-\ket{0010}$\\
+$10$ & $+\ket{10}$ & $+\ket{1000}$ & $+\ket{1000}$\\
+$11$ & $-\ket{12}$ & $-\ket{1200}$ & $+i\ket{1001}$\\\bottomrule
+\end{tabular}\end{center}
+$C=0,I=1$先送左；$C=1,I=1$暂存于2态，经过左搬运后由$X_{12}$变回1，再送右。理想端点帧$(\phi_C,\phi_L,\phi_R)=(0,-\pi,\pi/2)$消去相对相位。这是理想矩阵解，不是实际脉冲校准值。
+\datafig{03_native_r5}{R5下行原生线路。两行连续阅读，没有重置；蓝块为01门，红块为12门。实际轴和参考帧见附录逐门表。}{fig:r5}
+
+\subsection{2态作用在20/21相位，而不是必然破坏11校准}
+01空间校准主要固定
+\begin{equation}
+ \chi_{11}-\chi_{10}-\chi_{01}+\chi_{00}\simeq\pi,
+\end{equation}
+却没有同时固定$\chi_{21}-\chi_{20}$。第一位指临时含2态的线；若物理位顺序相反，应改写为12/02扇区。
+
+含2态的控制经过CNOT目标半门夹层，看到的目标块近似为
+\begin{equation}\label{eq:B}
+ B=R_y(\pi/2)\begin{pmatrix}e^{i\chi_{20}}&0\\0&e^{i\chi_{21}}\end{pmatrix}R_y(-\pi/2).
+\end{equation}
+令$\bar\chi=(\chi_{20}+\chi_{21})/2$、$\delta=\chi_{21}-\chi_{20}$，则
+\begin{equation}\label{eq:Baction}
+ B\ket0=e^{i\bar\chi}\left[\cos(\delta/2)\ket0-i\sin(\delta/2)\ket1\right].
+\end{equation}
+旁路不再静止，而可能改变目标人口。\textbf{末端对角虚拟Z只能改相位，不能消掉已经产生的错误人口。}这与“11相位校准失败”是两件事。真实CZ还可能发生$\ket{21}$与$\ket{30}$等振幅交换，完整脉冲保留这些作用；式\eqref{eq:B}只是近似封闭块的解释。
+
+\subsection{配对V怎样同时保留正常搬运、恢复辅助路径}
+令左搬运$K=T_{I\to L}$。正常01入口近似满足$K\ket{\psi,0}\simeq\ket{0,\psi}$；辅助路径近似为$K\ket{2,0}\simeq\ket2 M\ket0$。若该块近似封闭、泄露小，选择V的第一列匹配$M\ket0$的归一化方向，则
+\begin{align}
+ \ket{\psi,0}&\xrightarrow{V(I)}\ket{V\psi,0}
+ \xrightarrow{K}\ket{0,V\psi}\xrightarrow{V^\dagger(L)}\ket{0,\psi},\label{eq:pairnormal}\\
+ \ket{2,0}&\xrightarrow{V(I)}\ket{2,0}
+ \xrightarrow{K}\ket2M\ket0\xrightarrow{V^\dagger(L)}e^{i\gamma}\ket{2,0}.\label{eq:pairaux}
+\end{align}
+第一行正常搬运保留；第二行辅助目标返回空态，剩余分支相位再由端点校准处理。漏出该块的振幅无法由V恢复，结论也依赖$L$初始0及正常搬运接近理想。
+
+这是利用受限入口的\textbf{配对匹配}，没有新增回波CZ，不是通用完整CSWAP恒等式。仅当人口路径已经正确、剩余相位可分解为局域相位时，输出虚拟Z才足够。
+
+\subsection{R6和实际回程模板}
+R6下行使用不同重排，不含配对V：
+\begin{equation}\label{eq:r6}
+\begin{aligned}
+ &C_{I\to L}\seq X_{01}(I)\seq X_{12}(I)\seq C_{C\to I}\\
+ &\seq X_{12}(I)\seq X_{01}(I)\seq C_{L\to I}\seq X_{12}(I)\\
+ &\seq C_{I\to L}\seq C_{I\to R}\seq C_{R\to I}\seq F_{\rm out}.
+\end{aligned}
+\end{equation}
+每个方向6个CZ、17个物理单门；R5为5个CZ、19个单门。不用V不代表高能级物理作用消失，仍需脉冲和往返验证。
+\datafig{03_native_r6}{R6下行原生线路。以一个额外CZ换取不使用配对V；单门与CZ仍分层隔离。}{fig:r6}
+
+R5上行按时间执行
+\begin{equation}\label{eq:r5up}
+\begin{aligned}
+ &F_{\rm in}\seq T_{R\to I}\seq X_{12}(I)\seq V_{\uparrow}^{\dagger}(L)\\
+ &\seq T_{L\to I}\seq V_{\uparrow}(I)\seq\operatorname{rev}_{\CZ}(E).
+\end{aligned}
+\end{equation}
+R6上行先加输入端点帧，再执行裸下行的$\operatorname{rev}_{\CZ}$。该操作倒转顺序、将01半门轴加$\pi$、显式帧取反，但$\pi$门与CZ仍用同一物理脉冲。
+
+它\textbf{不是完整多能级传播子的数学dagger}：高能级CZ不保证自逆，$\pi$门也有旁路相位。因此上下行分别保存校准参数，不能默认$V_{\uparrow}=V_{\downarrow}$，还必须直接验证实际down接实际up。端点帧下行放输出，上行放输入。
+\FloatBarrier
+
+\section{从三个节点到固定数据库查询}\label{sec:query}
+\subsection{17个角色和共享端口}
+QPU有$A_0,A_1,D$。临时树有三个控制$C_0,C_1,C_2$；数据端口包括根与子输入$T_0,T_1,T_2$，以及四个叶端$L_{00},L_{01},L_{10},L_{11}$。另有四个存储$M_{00},M_{01},M_{10},M_{11}$。节点映射为
+\begin{center}\small\begin{tabular}{@{}ccccc@{}}\toprule
+节点&C&I&L&R\\\midrule
+根&$C_0$&$T_0$&$T_1$&$T_2$\\左子&$C_1$&$T_1$&$L_{00}$&$L_{01}$\\右子&$C_2$&$T_2$&$L_{10}$&$L_{11}$\\\bottomrule
+\end{tabular}\end{center}
+根输出与子节点输入共用物理端口；$T_1,T_2$在这里是端口名，与寿命参数无关。左右子节点互不重叠可并行，根与共享端口的子节点不能同时占用。
+\datafig{01_architecture}{17角色和参考连边。$D-T_0$是唯一计入的跨片接口；还假定QPU具有$A_0-D$、$A_1-D$及$A_0-A_1$边，叶端各有存储访问边。}{fig:architecture}
+
+\subsection{网关如何恢复中间位D}
+定义
+\begin{equation}
+ G(A_j):S_{A_jD}\seq S_{DT_0}\seq S_{A_jD}.
+\end{equation}
+初始标签$(a,d,t)$经历$(a,d,t)\to(d,a,t)\to(d,t,a)\to(t,d,a)$，所以交换$A_j$与$T_0$，并恢复D。线性扩展后对01叠加及纠缠也成立。每次G用9个CZ，其中3个跨片。
+
+\subsection{完整顺序：加载、访问、恢复}
+表\ref{tab:querysequence}按实际时间列出宏观线路。$\parallel$表示并行，其余串行。临时树入口全0；每次下行的目标端口由前面的保存与恢复步骤保持为空。
+\input{tables/query_sequence.tex}
+共8次router调用：根用于地址低位加载/卸载2次，加数据经过三个节点的下行/上行6次；合计下行4次、上行4次。不能只计数据路径而漏掉地址处理。
+\datafig{02_pipeline}{一次完整query的因果顺序。地址保存与卸载、数据下行与返回缺一不可；上行采用实际独立参数，而不是数值强行取下行dagger。}{fig:pipeline}
+
+\subsection{四个固定存储CZ为何只访问一个地址}
+把理想地址保存和数据路由编码记为W。H编码后的数据基态记为x，到达访问层时有$n_{L_j}=x\delta_{j,a}$，因此
+\begin{equation}\label{eq:memoryphase}
+ P_M=\prod_j\CZ(L_j,M_j):\quad
+ \ket{a,x}\mapsto(-1)^{\sum_jn_{L_j}m_j}\ket{a,x}=(-1)^{xm_a}\ket{a,x}.
+\end{equation}
+返回后临时树清零，两侧H将相位作用转为异或：
+\begin{equation}\label{eq:queryconstruction}
+ Q_m=H_DW^\dagger P_MWH_D,\qquad Q_m\ket{a,d}=\ket{a,d\oplus m_a}.
+\end{equation}
+该式用于理想推导。实际表中入口H在地址加载之后；理想加载恢复D，故与$H_D$可交换。脉冲实现仍按表传播，实际up不被数学dagger替代。
+
+例如$M=0010$只翻转地址10的数据位。按$\ket{A_0A_1D}$基序，
+\begin{equation}\label{eq:matrixexample}
+ Q_{0010}=\diag(I_2,I_2,X,I_2)=
+ \begin{pmatrix}
+1&0&0&0&0&0&0&0\\0&1&0&0&0&0&0&0\\0&0&1&0&0&0&0&0\\0&0&0&1&0&0&0&0\\
+0&0&0&0&0&1&0&0\\0&0&0&0&1&0&0&0\\0&0&0&0&0&0&1&0\\0&0&0&0&0&0&0&1
+\end{pmatrix}.
+\end{equation}
+数据库切换只改M初态，访问层四个CZ和主体线路都不改。模拟将基态存储精确收缩为叶端Z或I，不代表硬件计划删除存储门。
+
+\subsection{先证明理想结构}
+检查逐项相乘原生单门、CZ和参考帧，没有把节点当未展开黑箱。R5/R6各16数据库的完整$8\times8$复数query矩阵均通过，只去掉一个公共全局相位，最大元素误差为$\IdealError$。
+
+另外对128个地址/数据/存储组合与256个H编码分支逐步核验，共2048次router调用均满足合法入口，最后辅助全零、数据库保持。由此才可将部分节点用于完整查询，而不是靠某个特定输入偶然通过。
+\FloatBarrier

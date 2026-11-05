@@ -1,0 +1,4096 @@
+{
+  "r5_down": {
+    "scheme": "r5",
+    "direction": "down",
+    "parameter": {
+      "scheme": "r5",
+      "direction": "down",
+      "bits": [
+        "q111",
+        "q121",
+        "q130",
+        "q112"
+      ],
+      "paired": {
+        "matrix": [
+          [
+            [
+              0.9230477828067046,
+              0.0
+            ],
+            [
+              -0.0011450495619116652,
+              -0.3846836096289097
+            ]
+          ],
+          [
+            [
+              0.2745447284215499,
+              -0.26945868468387507
+            ],
+            [
+              0.6485208851322659,
+              0.6568393037049745
+            ]
+          ]
+        ],
+        "source": "conditional i=2 four-input 01 process tomography; U(2) fit"
+      },
+      "angles": {
+        "c": 2.136814933097932,
+        "l": -0.1345071691515263,
+        "r": 2.34811460961458
+      },
+      "frame_position": "output c/l/r",
+      "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r5\\down\\pulse-L4-shots1000\\frozen\\readout_calibration.json",
+      "run_config_sha256": "9b73f374cd468051d73b3ac305fcc3180afd65aad13631678dbb2aecb900ad48",
+      "completed_utc": "2026-10-02T06:44:06.738856+00:00",
+      "up_coherence_scope": null
+    },
+    "operations": [
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5678197347293732
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7839098673646866
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7853981633974483
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7897337550306119
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.39486687751530597
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7853981633974483
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7760491493398314
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": -0.3880245746699157
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.39588529269477096
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": 2.3655435042499615
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -1.1827717521249808
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.7853981633974483
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7897337550306119
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.39486687751530597
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7853981633974483
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -1.57377291886042
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.78688645943021
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.39588529269477085
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "phase": 2.136814933097932
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "phase": -0.1345071691515263
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "phase": 2.34811460961458
+      }
+    ],
+    "records": [
+      {
+        "sequence": 1,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 0.0,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 2,
+        "layer": 2,
+        "start_ns": 32.0,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": -0.012125144789223052,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 3,
+        "layer": 3,
+        "start_ns": 72.0,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.4633768958094775,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 4,
+        "layer": 4,
+        "start_ns": 104.0,
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "roles": [
+          "C",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 30.6418337830458
+      },
+      {
+        "sequence": 5,
+        "layer": 5,
+        "start_ns": 134.6418337830458,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 4.787764255579972,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 6,
+        "layer": 6,
+        "start_ns": 166.6418337830458,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 3.2188885339251594,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 7,
+        "layer": 7,
+        "start_ns": 206.6418337830458,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 3.086502536398577,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 8,
+        "layer": 7,
+        "start_ns": 206.6418337830458,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5678197347293732,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 9,
+        "layer": 7,
+        "start_ns": 206.6418337830458,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.7839098673646866,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 10,
+        "layer": 7,
+        "start_ns": 206.6418337830458,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 11,
+        "layer": 7,
+        "start_ns": 206.6418337830458,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 12,
+        "layer": 8,
+        "start_ns": 238.6418337830458,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 1.794879533408672,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 13,
+        "layer": 8,
+        "start_ns": 238.6418337830458,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -0.7897337550306119,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 14,
+        "layer": 8,
+        "start_ns": 238.6418337830458,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.39486687751530597,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 15,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -2.098134966844183,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 16,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 17,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 18,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.7760491493398314,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 19,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -0.3880245746699157,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 20,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.39588529269477096,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 21,
+        "layer": 9,
+        "start_ns": 270.6418337830458,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.5707963267948966,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 22,
+        "layer": 10,
+        "start_ns": 302.6418337830458,
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "roles": [
+          "I",
+          "L"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 23,
+        "layer": 11,
+        "start_ns": 359.0131443096691,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 3.695582165553895,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 24,
+        "layer": 11,
+        "start_ns": 359.0131443096691,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 0.5483825935935598,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 25,
+        "layer": 12,
+        "start_ns": 391.0131443096691,
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "roles": [
+          "L",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 26,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 3.989647331486368,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 27,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 2.3655435042499615,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 28,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.1827717521249808,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 29,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 30,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 31,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 6.615115181767958,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 32,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.7897337550306119,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 33,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 0.39486687751530597,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 34,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 2.722097706994,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 35,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 36,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 37,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.57377291886042,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 38,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 0.78688645943021,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 39,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.39588529269477085,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 40,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 5.10036850115563,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 41,
+        "layer": 14,
+        "start_ns": 479.3844548362923,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.5707963267948966,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 42,
+        "layer": 15,
+        "start_ns": 519.3844548362923,
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "roles": [
+          "I",
+          "R"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 43,
+        "layer": 16,
+        "start_ns": 584.2049114879285,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 0.44707844741829095,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 44,
+        "layer": 16,
+        "start_ns": 584.2049114879285,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 0.9751378435415412,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 45,
+        "layer": 17,
+        "start_ns": 616.2049114879285,
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "roles": [
+          "R",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 46,
+        "layer": 18,
+        "start_ns": 681.0253681395646,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 4.41259096353035,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 47,
+        "layer": 18,
+        "start_ns": 681.0253681395646,
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "roles": [
+          "C"
+        ],
+        "nominal_phase_rad": 2.136814933097932,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 48,
+        "layer": 18,
+        "start_ns": 681.0253681395646,
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.1345071691515263,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 49,
+        "layer": 18,
+        "start_ns": 681.0253681395646,
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 2.34811460961458,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      }
+    ],
+    "layer_rows": [
+      [
+        1,
+        "0.000–32.000",
+        "单门/帧",
+        "X01(I)[0.000000]"
+      ],
+      [
+        2,
+        "32.000–72.000",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        3,
+        "72.000–104.000",
+        "单门/帧",
+        "X01/2(I)[-1.570796]"
+      ],
+      [
+        4,
+        "104.000–134.642",
+        "CZ",
+        "CZ(C,I)"
+      ],
+      [
+        5,
+        "134.642–166.642",
+        "单门/帧",
+        "X01/2(I)[1.570796]"
+      ],
+      [
+        6,
+        "166.642–206.642",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        7,
+        "206.642–238.642",
+        "单门/帧",
+        "X01(I)[0.000000]; F01(I)[-1.567820]; F12(I)[0.783910]; F01(I)[-1.570796]; F12(I)[0.785398]"
+      ],
+      [
+        8,
+        "238.642–270.642",
+        "单门/帧",
+        "X01/2(I)[1.570796]; F01(I)[-0.789734]; F12(I)[0.394867]"
+      ],
+      [
+        9,
+        "270.642–302.642",
+        "单门/帧",
+        "X01/2(I)[-1.570796]; F01(I)[1.570796]; F12(I)[-0.785398]; F01(I)[0.776049]; F12(I)[-0.388025]; F12(I)[0.395885]; X01/2(L)[-1.570796]"
+      ],
+      [
+        10,
+        "302.642–359.013",
+        "CZ",
+        "CZ(I,L)"
+      ],
+      [
+        11,
+        "359.013–391.013",
+        "单门/帧",
+        "X01/2(L)[1.570796]; X01/2(I)[-1.570796]"
+      ],
+      [
+        12,
+        "391.013–447.384",
+        "CZ",
+        "CZ(L,I)"
+      ],
+      [
+        13,
+        "447.384–479.384",
+        "单门/帧",
+        "X01/2(I)[1.570796]; F01(L)[2.365544]; F12(L)[-1.182772]; F01(L)[-1.570796]; F12(L)[0.785398]; X01/2(L)[1.570796]; F01(L)[-0.789734]; F12(L)[0.394867]"
+      ],
+      [
+        14,
+        "479.384–519.384",
+        "单门/帧",
+        "X01/2(L)[-1.570796]; F01(L)[1.570796]; F12(L)[-0.785398]; F01(L)[-1.573773]; F12(L)[0.786886]; F12(L)[-0.395885]; X12(I)[0.000000]; X01/2(R)[-1.570796]"
+      ],
+      [
+        15,
+        "519.384–584.205",
+        "CZ",
+        "CZ(I,R)"
+      ],
+      [
+        16,
+        "584.205–616.205",
+        "单门/帧",
+        "X01/2(R)[1.570796]; X01/2(I)[-1.570796]"
+      ],
+      [
+        17,
+        "616.205–681.025",
+        "CZ",
+        "CZ(R,I)"
+      ],
+      [
+        18,
+        "681.025–713.025",
+        "单门/帧",
+        "X01/2(I)[1.570796]; F(C)[2.136815]; F(L)[-0.134507]; F(R)[2.348115]"
+      ]
+    ],
+    "duration_ns": 713.0253681395646,
+    "physical_layers": 18,
+    "final_transition_frames_rad": [
+      [
+        2.278363471823791,
+        2.278363471823791
+      ],
+      [
+        2.8801065451030037,
+        5.775242706500837
+      ],
+      [
+        4.193719206418294,
+        3.690489017139776
+      ],
+      [
+        0.10067885086136874,
+        0.05080653627971499
+      ]
+    ],
+    "gate_counts": {
+      "01_pi": 2,
+      "12_pi": 3,
+      "01_half": 14,
+      "cz": 5,
+      "frame_01": 10,
+      "frame_12": 12,
+      "frame": 3
+    }
+  },
+  "r5_up": {
+    "scheme": "r5",
+    "direction": "up",
+    "parameter": {
+      "scheme": "r5",
+      "direction": "up",
+      "bits": [
+        "q111",
+        "q121",
+        "q130",
+        "q112"
+      ],
+      "paired": {
+        "matrix": [
+          [
+            [
+              0.9221910773076553,
+              0.0
+            ],
+            [
+              0.27314908872690064,
+              -0.2737758065677279
+            ]
+          ],
+          [
+            [
+              0.00025065788480216713,
+              -0.3867344749369662
+            ],
+            [
+              0.6524120626421356,
+              0.6517629044252886
+            ]
+          ]
+        ],
+        "source": "conditional i=2 four-input 01 process tomography; U(2) fit"
+      },
+      "angles": {
+        "c": 2.1591588278729366,
+        "l": -0.153202786651485,
+        "r": 2.3348394092576727
+      },
+      "frame_position": "input c/l/r",
+      "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r5\\up\\pulse-L4-shots1000\\frozen\\readout_calibration.json",
+      "run_config_sha256": "d482abc9a04685cc99515d60ec227f692a94b546f63c615ff1199c60fda94911",
+      "completed_utc": "2026-10-02T06:44:21.459350+00:00",
+      "up_coherence_scope": "matched down-prepared roundtrip, not isolated up fidelity"
+    },
+    "operations": [
+      {
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "phase": 2.1591588278729366
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "phase": -0.153202786651485
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "phase": 2.3348394092576727
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5714444661927194
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7857222330963597
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.7853981633974483
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7941759799729406
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.3970879899864703
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7853981633974483
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7865440566853763
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.39327202834268815
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.3924502047536716
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -2.355048596904417
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 1.1775242984522085
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7853981633974483
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7941759799729406
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.3970879899864703
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7853981633974483
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5701481873970735
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7850740936985368
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.39245020475367165
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    "records": [
+      {
+        "sequence": 1,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "roles": [
+          "C"
+        ],
+        "nominal_phase_rad": 2.1591588278729366,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 2,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.153202786651485,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 3,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 2.3348394092576727,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 4,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.5707963267948966,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 5,
+        "layer": 2,
+        "start_ns": 32.0,
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "roles": [
+          "R",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 6,
+        "layer": 3,
+        "start_ns": 96.82045665163612,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 1.8666567931939122,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 7,
+        "layer": 3,
+        "start_ns": 96.82045665163612,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -0.3958888002754952,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 8,
+        "layer": 4,
+        "start_ns": 128.8204566516361,
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "roles": [
+          "I",
+          "R"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 9,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 1.6219859739376923,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 10,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 0.5395673240245724,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 11,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5714444661927194,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 12,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.7857222330963597,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 13,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 14,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 15,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 1.4182416795412345,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 16,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.7941759799729406,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 17,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 0.3970879899864703,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 18,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -2.479218020175052,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 19,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 20,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 21,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.7865440566853763,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 22,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 0.39327202834268815,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 23,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.3924502047536716,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 24,
+        "layer": 6,
+        "start_ns": 233.6409133032722,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.147852694750914,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 25,
+        "layer": 7,
+        "start_ns": 265.6409133032722,
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "roles": [
+          "L",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 26,
+        "layer": 8,
+        "start_ns": 322.01222382989545,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 2.293412043141894,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 27,
+        "layer": 8,
+        "start_ns": 322.01222382989545,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 0.4298200886934662,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 28,
+        "layer": 9,
+        "start_ns": 354.01222382989545,
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "roles": [
+          "I",
+          "L"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 29,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 5.696198581042258,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 30,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -2.355048596904417,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 31,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.1775242984522085,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 32,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 33,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 34,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": -1.332760796254405,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 35,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -0.7941759799729406,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 36,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.3970879899864703,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 37,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -5.230217521449589,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 38,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 39,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -0.7853981633974483,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 40,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5701481873970735,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 41,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -0.7850740936985368,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 42,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.39245020475367165,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 43,
+        "layer": 12,
+        "start_ns": 474.3835343565187,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": -0.4801647720951716,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 44,
+        "layer": 13,
+        "start_ns": 506.3835343565187,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 2.4163982278440095,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 45,
+        "layer": 14,
+        "start_ns": 546.3835343565187,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.943541667904649,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 46,
+        "layer": 15,
+        "start_ns": 578.3835343565187,
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "roles": [
+          "C",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 30.6418337830458
+      },
+      {
+        "sequence": 47,
+        "layer": 16,
+        "start_ns": 609.0253681395645,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 4.3075994834848,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 48,
+        "layer": 17,
+        "start_ns": 641.0253681395645,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 5.647411906558392,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 49,
+        "layer": 18,
+        "start_ns": 681.0253681395645,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 2.6063377643034054,
+        "pulse_duration_ns": 32.0
+      }
+    ],
+    "layer_rows": [
+      [
+        1,
+        "0.000–32.000",
+        "单门/帧",
+        "F(C)[2.159159]; F(L)[-0.153203]; F(R)[2.334839]; X01/2(I)[-1.570796]"
+      ],
+      [
+        2,
+        "32.000–96.820",
+        "CZ",
+        "CZ(R,I)"
+      ],
+      [
+        3,
+        "96.820–128.820",
+        "单门/帧",
+        "X01/2(I)[1.570796]; X01/2(R)[-1.570796]"
+      ],
+      [
+        4,
+        "128.820–193.641",
+        "CZ",
+        "CZ(I,R)"
+      ],
+      [
+        5,
+        "193.641–233.641",
+        "单门/帧",
+        "X01/2(R)[1.570796]; X12(I)[0.000000]; F01(L)[1.571444]; F12(L)[-0.785722]; F01(L)[-1.570796]; F12(L)[0.785398]; X01/2(L)[1.570796]; F01(L)[-0.794176]; F12(L)[0.397088]"
+      ],
+      [
+        6,
+        "233.641–265.641",
+        "单门/帧",
+        "X01/2(L)[-1.570796]; F01(L)[1.570796]; F12(L)[-0.785398]; F01(L)[-0.786544]; F12(L)[0.393272]; F12(L)[-0.392450]; X01/2(I)[-1.570796]"
+      ],
+      [
+        7,
+        "265.641–322.012",
+        "CZ",
+        "CZ(L,I)"
+      ],
+      [
+        8,
+        "322.012–354.012",
+        "单门/帧",
+        "X01/2(I)[1.570796]; X01/2(L)[-1.570796]"
+      ],
+      [
+        9,
+        "354.012–410.384",
+        "CZ",
+        "CZ(I,L)"
+      ],
+      [
+        10,
+        "410.384–442.384",
+        "单门/帧",
+        "X01/2(L)[1.570796]; F01(I)[-2.355049]; F12(I)[1.177524]; F01(I)[-1.570796]; F12(I)[0.785398]; X01/2(I)[1.570796]; F01(I)[-0.794176]; F12(I)[0.397088]"
+      ],
+      [
+        11,
+        "442.384–474.384",
+        "单门/帧",
+        "X01/2(I)[-1.570796]; F01(I)[1.570796]; F12(I)[-0.785398]; F01(I)[1.570148]; F12(I)[-0.785074]; F12(I)[0.392450]"
+      ],
+      [
+        12,
+        "474.384–506.384",
+        "单门/帧",
+        "X01(I)[0.000000]"
+      ],
+      [
+        13,
+        "506.384–546.384",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        14,
+        "546.384–578.384",
+        "单门/帧",
+        "X01/2(I)[-1.570796]"
+      ],
+      [
+        15,
+        "578.384–609.025",
+        "CZ",
+        "CZ(C,I)"
+      ],
+      [
+        16,
+        "609.025–641.025",
+        "单门/帧",
+        "X01/2(I)[1.570796]"
+      ],
+      [
+        17,
+        "641.025–681.025",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        18,
+        "681.025–713.025",
+        "单门/帧",
+        "X01(I)[0.000000]"
+      ]
+    ],
+    "duration_ns": 713.0253681395645,
+    "physical_layers": 18,
+    "final_transition_frames_rad": [
+      [
+        2.3007073665987954,
+        2.3007073665987954
+      ],
+      [
+        2.8825344960428736,
+        5.770593643089803
+      ],
+      [
+        4.163711188093808,
+        3.68088468799318
+      ],
+      [
+        0.08740365050446151,
+        0.037531335922807725
+      ]
+    ],
+    "gate_counts": {
+      "frame": 3,
+      "01_half": 14,
+      "cz": 5,
+      "12_pi": 3,
+      "frame_01": 10,
+      "frame_12": 12,
+      "01_pi": 2
+    }
+  },
+  "r6_down": {
+    "scheme": "r6",
+    "direction": "down",
+    "parameter": {
+      "scheme": "r6",
+      "direction": "down",
+      "bits": [
+        "q111",
+        "q121",
+        "q130",
+        "q112"
+      ],
+      "paired": null,
+      "angles": {
+        "c": 2.1390297917410077,
+        "l": -0.13344995090554682,
+        "r": 2.956957589186703
+      },
+      "frame_position": "output c/l/r",
+      "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r6\\down\\pulse-L4-shots1000\\readout_calibration.json",
+      "run_config_sha256": "0a871ad61262f0a520ee396f141d35c56b3da02af51b242cbd39ab0d20eab409",
+      "completed_utc": "2026-10-02T06:43:36.364941+00:00",
+      "up_coherence_scope": null
+    },
+    "operations": [
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "phase": 2.1390297917410077
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "phase": -0.13344995090554682
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "phase": 2.956957589186703
+      }
+    ],
+    "records": [
+      {
+        "sequence": 1,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.5707963267948966,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 2,
+        "layer": 2,
+        "start_ns": 32.0,
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "roles": [
+          "I",
+          "L"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 3,
+        "layer": 3,
+        "start_ns": 88.37131052662326,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 3.695582165553895,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 4,
+        "layer": 3,
+        "start_ns": 88.37131052662326,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 0.26136017593546457,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 5,
+        "layer": 4,
+        "start_ns": 120.37131052662326,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 0.24923503114624151,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 6,
+        "layer": 5,
+        "start_ns": 160.37131052662326,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.2020167198740128,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 7,
+        "layer": 6,
+        "start_ns": 192.37131052662326,
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "roles": [
+          "C",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 30.6418337830458
+      },
+      {
+        "sequence": 8,
+        "layer": 7,
+        "start_ns": 223.01314430966906,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 5.0491244315154375,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 9,
+        "layer": 8,
+        "start_ns": 255.01314430966906,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 3.480248709860624,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 10,
+        "layer": 9,
+        "start_ns": 295.0131443096691,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 3.3478627123340416,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 11,
+        "layer": 10,
+        "start_ns": 327.0131443096691,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 2.0532631172786133,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 12,
+        "layer": 11,
+        "start_ns": 359.0131443096691,
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "roles": [
+          "L",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 13,
+        "layer": 12,
+        "start_ns": 415.3844548362923,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 5.494527855171421,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 14,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 3.8892608302891416,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 15,
+        "layer": 13,
+        "start_ns": 447.3844548362923,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 2.6787753507231002,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 16,
+        "layer": 14,
+        "start_ns": 487.3844548362923,
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "roles": [
+          "I",
+          "L"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 17,
+        "layer": 15,
+        "start_ns": 543.7557653629156,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 7.945153843071891,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 18,
+        "layer": 15,
+        "start_ns": 543.7557653629156,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.5707963267948966,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 19,
+        "layer": 16,
+        "start_ns": 575.7557653629156,
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "roles": [
+          "I",
+          "R"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 20,
+        "layer": 17,
+        "start_ns": 640.5762220145517,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 0.44707844741829095,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 21,
+        "layer": 17,
+        "start_ns": 640.5762220145517,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 2.7413785431620594,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 22,
+        "layer": 18,
+        "start_ns": 672.5762220145517,
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "roles": [
+          "R",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 23,
+        "layer": 19,
+        "start_ns": 737.3966786661879,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 6.178831663150868,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 24,
+        "layer": 19,
+        "start_ns": 737.3966786661879,
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "roles": [
+          "C"
+        ],
+        "nominal_phase_rad": 2.1390297917410077,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 25,
+        "layer": 19,
+        "start_ns": 737.3966786661879,
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.13344995090554682,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 26,
+        "layer": 19,
+        "start_ns": 737.3966786661879,
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 2.956957589186703,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      }
+    ],
+    "layer_rows": [
+      [
+        1,
+        "0.000–32.000",
+        "单门/帧",
+        "X01/2(L)[-1.570796]"
+      ],
+      [
+        2,
+        "32.000–88.371",
+        "CZ",
+        "CZ(I,L)"
+      ],
+      [
+        3,
+        "88.371–120.371",
+        "单门/帧",
+        "X01/2(L)[1.570796]; X01(I)[0.000000]"
+      ],
+      [
+        4,
+        "120.371–160.371",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        5,
+        "160.371–192.371",
+        "单门/帧",
+        "X01/2(I)[-1.570796]"
+      ],
+      [
+        6,
+        "192.371–223.013",
+        "CZ",
+        "CZ(C,I)"
+      ],
+      [
+        7,
+        "223.013–255.013",
+        "单门/帧",
+        "X01/2(I)[1.570796]"
+      ],
+      [
+        8,
+        "255.013–295.013",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        9,
+        "295.013–327.013",
+        "单门/帧",
+        "X01(I)[0.000000]"
+      ],
+      [
+        10,
+        "327.013–359.013",
+        "单门/帧",
+        "X01/2(I)[-1.570796]"
+      ],
+      [
+        11,
+        "359.013–415.384",
+        "CZ",
+        "CZ(L,I)"
+      ],
+      [
+        12,
+        "415.384–447.384",
+        "单门/帧",
+        "X01/2(I)[1.570796]"
+      ],
+      [
+        13,
+        "447.384–487.384",
+        "单门/帧",
+        "X12(I)[0.000000]; X01/2(L)[-1.570796]"
+      ],
+      [
+        14,
+        "487.384–543.756",
+        "CZ",
+        "CZ(I,L)"
+      ],
+      [
+        15,
+        "543.756–575.756",
+        "单门/帧",
+        "X01/2(L)[1.570796]; X01/2(R)[-1.570796]"
+      ],
+      [
+        16,
+        "575.756–640.576",
+        "CZ",
+        "CZ(I,R)"
+      ],
+      [
+        17,
+        "640.576–672.576",
+        "单门/帧",
+        "X01/2(R)[1.570796]; X01/2(I)[-1.570796]"
+      ],
+      [
+        18,
+        "672.576–737.397",
+        "CZ",
+        "CZ(R,I)"
+      ],
+      [
+        19,
+        "737.397–769.397",
+        "单门/帧",
+        "X01/2(I)[1.570796]; F(C)[2.139030]; F(L)[-0.133450]; F(R)[2.956958]"
+      ]
+    ],
+    "duration_ns": 769.3966786661879,
+    "physical_layers": 19,
+    "final_transition_frames_rad": [
+      [
+        2.2805783304668665,
+        2.2805783304668665
+      ],
+      [
+        4.646347244723522,
+        4.825495211569812
+      ],
+      [
+        6.2792164992178945,
+        6.174926848172541
+      ],
+      [
+        0.7095218304334918,
+        0.6596495158518381
+      ]
+    ],
+    "gate_counts": {
+      "01_half": 12,
+      "cz": 6,
+      "01_pi": 2,
+      "12_pi": 3,
+      "frame": 3
+    }
+  },
+  "r6_up": {
+    "scheme": "r6",
+    "direction": "up",
+    "parameter": {
+      "scheme": "r6",
+      "direction": "up",
+      "bits": [
+        "q111",
+        "q121",
+        "q130",
+        "q112"
+      ],
+      "paired": null,
+      "angles": {
+        "c": 2.1142720857091493,
+        "l": -0.14381783043165802,
+        "r": 3.0067455533311285
+      },
+      "frame_position": "input c/l/r",
+      "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r6\\up\\pulse-L4-shots1000\\frozen\\readout_calibration.json",
+      "run_config_sha256": "36f501a0facab3dd4465b5233601de467de48c82e93ee3eafa31cd4f8e499b46",
+      "completed_utc": "2026-10-02T06:43:47.014176+00:00",
+      "up_coherence_scope": "matched down-prepared roundtrip, not isolated up fidelity"
+    },
+    "operations": [
+      {
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "phase": 2.1142720857091493
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "phase": -0.14381783043165802
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "phase": 3.0067455533311285
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      }
+    ],
+    "records": [
+      {
+        "sequence": 1,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "roles": [
+          "C"
+        ],
+        "nominal_phase_rad": 2.1142720857091493,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 2,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -0.14381783043165802,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 3,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 3.0067455533311285,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 0.0
+      },
+      {
+        "sequence": 4,
+        "layer": 1,
+        "start_ns": 0.0,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.5707963267948966,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 5,
+        "layer": 2,
+        "start_ns": 32.0,
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "roles": [
+          "R",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 6,
+        "layer": 3,
+        "start_ns": 96.82045665163612,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 1.8666567931939122,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 7,
+        "layer": 3,
+        "start_ns": 96.82045665163612,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 0.2760173437979605,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 8,
+        "layer": 4,
+        "start_ns": 128.8204566516361,
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "roles": [
+          "I",
+          "R"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 64.82045665163612
+      },
+      {
+        "sequence": 9,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "roles": [
+          "R"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 2.293892118011148,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 10,
+        "layer": 5,
+        "start_ns": 193.6409133032722,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -1.7146141572265545,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 11,
+        "layer": 6,
+        "start_ns": 225.6409133032722,
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "roles": [
+          "I",
+          "L"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 12,
+        "layer": 7,
+        "start_ns": 282.01222382989545,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 3.551764335122237,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 13,
+        "layer": 7,
+        "start_ns": 282.01222382989545,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 0.800927499960037,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 14,
+        "layer": 8,
+        "start_ns": 322.01222382989545,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -0.8864925188154494,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 15,
+        "layer": 9,
+        "start_ns": 354.01222382989545,
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "roles": [
+          "L",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 16,
+        "layer": 10,
+        "start_ns": 410.3835343565187,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 2.5547722190773587,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 17,
+        "layer": 11,
+        "start_ns": 442.3835343565187,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 1.0222878006500122,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 18,
+        "layer": 12,
+        "start_ns": 474.3835343565187,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 1.2099396203885544,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 19,
+        "layer": 13,
+        "start_ns": 514.3835343565187,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": -0.44108909515946526,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 20,
+        "layer": 14,
+        "start_ns": 546.3835343565187,
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "roles": [
+          "C",
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 30.6418337830458
+      },
+      {
+        "sequence": 21,
+        "layer": 15,
+        "start_ns": 577.0253681395645,
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 5.810052056229985,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 22,
+        "layer": 16,
+        "start_ns": 609.0253681395645,
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 4.440953299102937,
+        "pulse_duration_ns": 40.0
+      },
+      {
+        "sequence": 23,
+        "layer": 17,
+        "start_ns": 649.0253681395645,
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "roles": [
+          "I"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": 4.10879033704859,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 24,
+        "layer": 17,
+        "start_ns": 649.0253681395645,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": -1.5707963267948966,
+        "buffered_phase_rad": 2.5349575202914423,
+        "pulse_duration_ns": 32.0
+      },
+      {
+        "sequence": 25,
+        "layer": 18,
+        "start_ns": 681.0253681395645,
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "roles": [
+          "I",
+          "L"
+        ],
+        "nominal_phase_rad": 0.0,
+        "buffered_phase_rad": null,
+        "pulse_duration_ns": 56.37131052662326
+      },
+      {
+        "sequence": 26,
+        "layer": 19,
+        "start_ns": 737.3966786661878,
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "roles": [
+          "L"
+        ],
+        "nominal_phase_rad": 1.5707963267948966,
+        "buffered_phase_rad": 7.801336012640233,
+        "pulse_duration_ns": 32.0
+      }
+    ],
+    "layer_rows": [
+      [
+        1,
+        "0.000–32.000",
+        "单门/帧",
+        "F(C)[2.114272]; F(L)[-0.143818]; F(R)[3.006746]; X01/2(I)[-1.570796]"
+      ],
+      [
+        2,
+        "32.000–96.820",
+        "CZ",
+        "CZ(R,I)"
+      ],
+      [
+        3,
+        "96.820–128.820",
+        "单门/帧",
+        "X01/2(I)[1.570796]; X01/2(R)[-1.570796]"
+      ],
+      [
+        4,
+        "128.820–193.641",
+        "CZ",
+        "CZ(I,R)"
+      ],
+      [
+        5,
+        "193.641–225.641",
+        "单门/帧",
+        "X01/2(R)[1.570796]; X01/2(L)[-1.570796]"
+      ],
+      [
+        6,
+        "225.641–282.012",
+        "CZ",
+        "CZ(I,L)"
+      ],
+      [
+        7,
+        "282.012–322.012",
+        "单门/帧",
+        "X01/2(L)[1.570796]; X12(I)[0.000000]"
+      ],
+      [
+        8,
+        "322.012–354.012",
+        "单门/帧",
+        "X01/2(I)[-1.570796]"
+      ],
+      [
+        9,
+        "354.012–410.384",
+        "CZ",
+        "CZ(L,I)"
+      ],
+      [
+        10,
+        "410.384–442.384",
+        "单门/帧",
+        "X01/2(I)[1.570796]"
+      ],
+      [
+        11,
+        "442.384–474.384",
+        "单门/帧",
+        "X01(I)[0.000000]"
+      ],
+      [
+        12,
+        "474.384–514.384",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        13,
+        "514.384–546.384",
+        "单门/帧",
+        "X01/2(I)[-1.570796]"
+      ],
+      [
+        14,
+        "546.384–577.025",
+        "CZ",
+        "CZ(C,I)"
+      ],
+      [
+        15,
+        "577.025–609.025",
+        "单门/帧",
+        "X01/2(I)[1.570796]"
+      ],
+      [
+        16,
+        "609.025–649.025",
+        "单门/帧",
+        "X12(I)[0.000000]"
+      ],
+      [
+        17,
+        "649.025–681.025",
+        "单门/帧",
+        "X01(I)[0.000000]; X01/2(L)[-1.570796]"
+      ],
+      [
+        18,
+        "681.025–737.397",
+        "CZ",
+        "CZ(I,L)"
+      ],
+      [
+        19,
+        "737.397–769.397",
+        "单门/帧",
+        "X01/2(L)[1.570796]"
+      ]
+    ],
+    "duration_ns": 769.3966786661878,
+    "physical_layers": 19,
+    "final_transition_frames_rad": [
+      [
+        2.255820624435008,
+        2.255820624435008
+      ],
+      [
+        4.646347244723522,
+        4.8254952115698115
+      ],
+      [
+        6.268848619691783,
+        6.16455896864643
+      ],
+      [
+        0.7593097945779173,
+        0.7094374799962635
+      ]
+    ],
+    "gate_counts": {
+      "frame": 3,
+      "01_half": 12,
+      "cz": 6,
+      "12_pi": 3,
+      "01_pi": 2
+    }
+  }
+}

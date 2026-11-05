@@ -1,0 +1,226 @@
+[
+  {
+    "case": "r5_0000",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0001",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0010",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0011",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0100",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0101",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0110",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_0111",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1000",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1001",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1010",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1011",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1100",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1101",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1110",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r5_1111",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0000",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0001",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0010",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0011",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0100",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0101",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0110",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_0111",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1000",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1001",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1010",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1011",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1100",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1101",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1110",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  },
+  {
+    "case": "r6_1111",
+    "metric_max_abs_error": 0.0,
+    "Choi_max_abs_error": 0.0,
+    "tolerance": 1e-06,
+    "passed": true
+  }
+]

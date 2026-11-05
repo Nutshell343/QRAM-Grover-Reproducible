@@ -1,0 +1,790 @@
+{
+  "wire_order": [
+    "C",
+    "I",
+    "L",
+    "R"
+  ],
+  "parameters": {
+    "scheme": "r5",
+    "direction": "down",
+    "bits": [
+      "q111",
+      "q121",
+      "q130",
+      "q112"
+    ],
+    "paired": {
+      "matrix": [
+        [
+          [
+            0.9230477828067046,
+            0.0
+          ],
+          [
+            -0.0011450495619116652,
+            -0.3846836096289097
+          ]
+        ],
+        [
+          [
+            0.2745447284215499,
+            -0.26945868468387507
+          ],
+          [
+            0.6485208851322659,
+            0.6568393037049745
+          ]
+        ]
+      ],
+      "source": "conditional i=2 four-input 01 process tomography; U(2) fit"
+    },
+    "angles": {
+      "c": 2.136814933097932,
+      "l": -0.1345071691515263,
+      "r": 2.34811460961458
+    },
+    "frame_position": "output c/l/r",
+    "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r5\\down\\pulse-L4-shots1000\\frozen\\readout_calibration.json",
+    "run_config_sha256": "9b73f374cd468051d73b3ac305fcc3180afd65aad13631678dbb2aecb900ad48",
+    "completed_utc": "2026-10-02T06:44:06.738856+00:00",
+    "up_coherence_scope": null
+  },
+  "chronological_operations": [
+    {
+      "gate": "01_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "12_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        0,
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "12_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5678197347293732
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        1
+      ],
+      "phase": 0.7839098673646866
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        1
+      ],
+      "phase": 0.7853981633974483
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        1
+      ],
+      "phase": -0.7897337550306119
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        1
+      ],
+      "phase": 0.39486687751530597
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        1
+      ],
+      "phase": -0.7853981633974483
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        1
+      ],
+      "phase": 0.7760491493398314
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        1
+      ],
+      "phase": -0.3880245746699157
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        1
+      ],
+      "phase": 0.39588529269477096
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        1,
+        2
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        2,
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        2
+      ],
+      "phase": 2.3655435042499615
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        2
+      ],
+      "phase": -1.1827717521249808
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        2
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        2
+      ],
+      "phase": 0.7853981633974483
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        2
+      ],
+      "phase": -0.7897337550306119
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        2
+      ],
+      "phase": 0.39486687751530597
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        2
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        2
+      ],
+      "phase": -0.7853981633974483
+    },
+    {
+      "gate": "frame_01",
+      "qubits": [
+        2
+      ],
+      "phase": -1.57377291886042
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        2
+      ],
+      "phase": 0.78688645943021
+    },
+    {
+      "gate": "frame_12",
+      "qubits": [
+        2
+      ],
+      "phase": -0.39588529269477085
+    },
+    {
+      "gate": "12_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        3
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        1,
+        3
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        3
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        3,
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "frame",
+      "qubits": [
+        0
+      ],
+      "phase": 2.136814933097932
+    },
+    {
+      "gate": "frame",
+      "qubits": [
+        2
+      ],
+      "phase": -0.1345071691515263
+    },
+    {
+      "gate": "frame",
+      "qubits": [
+        3
+      ],
+      "phase": 2.34811460961458
+    }
+  ],
+  "layers_with_frames": [
+    [
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5678197347293732
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7839098673646866
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7853981633974483
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7897337550306119
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.39486687751530597
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": -0.7853981633974483
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          1
+        ],
+        "phase": 0.7760491493398314
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": -0.3880245746699157
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          1
+        ],
+        "phase": 0.39588529269477096
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": 2.3655435042499615
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -1.1827717521249808
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.7853981633974483
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7897337550306119
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.39486687751530597
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.7853981633974483
+      },
+      {
+        "gate": "frame_01",
+        "qubits": [
+          2
+        ],
+        "phase": -1.57377291886042
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": 0.78688645943021
+      },
+      {
+        "gate": "frame_12",
+        "qubits": [
+          2
+        ],
+        "phase": -0.39588529269477085
+      },
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          0
+        ],
+        "phase": 2.136814933097932
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          2
+        ],
+        "phase": -0.1345071691515263
+      },
+      {
+        "gate": "frame",
+        "qubits": [
+          3
+        ],
+        "phase": 2.34811460961458
+      }
+    ]
+  ],
+  "SVG_scope": "core physical gates; input/output endpoint frames are in this full JSON"
+}

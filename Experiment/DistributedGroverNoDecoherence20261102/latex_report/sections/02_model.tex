@@ -1,0 +1,66 @@
+\section{从理想门到冻结脉冲：本次模拟了什么}\label{sec:pulse}
+\subsection{局域参考器件与波形}
+每个局域节点用四个Duffing振子，每位保留0、1、2、3四能级。频率和非谐性如下，来自合成参考器件，不是最新芯片校准。
+\input{tables/device.tex}
+在公共旋转系中，Hamiltonian结构为
+\begin{equation}\label{eq:hamiltonian}
+\begin{aligned}
+ H/\hbar={}&2\pi\sum_q\left[(f_q-f_{\rm rot})n_q+\frac{\alpha_q}{2}n_q(n_q-1)\right]\\
+ &+2\pi\sum_{(a,b)}g_{ab}(t)(a_a^\dagger a_b+a_a a_b^\dagger)
+ +\pi\sum_q[\widetilde\Omega_q(t)a_q^\dagger+\widetilde\Omega_q^*(t)a_q].
+\end{aligned}
+\end{equation}
+频率单位GHz，时间ns，Hamiltonian角频率rad/ns。$\widetilde\Omega$包含包络、轴相位和载波参考。单门时耦合关闭，CZ只打开选中边，其余边为0；这使不相交子块积分可以精确张量应用到四体态，而没有忽略选中边的高能级作用。
+
+01门长32 ns，12门长40 ns。余弦包络与DRAG为
+\begin{equation}
+ s(t)=\frac{1-\cos(2\pi t/T)}2,\qquad
+ \Omega(t)=A\left[s(t)-i\eta\frac{\dot s(t)}{\alpha}\right].
+\end{equation}
+$A,\eta$按模拟器约定定义，不是可直接上传的AWG电压。CZ用起、落半余弦权重w同时调频和开耦合：
+\begin{equation}
+ f_q(t)=f_q^0+w(t)(f_q^{\CZ}-f_q^0),\qquad
+ g_{ab}(t)=\rho_{ab}\sqrt{f_a(t)f_b(t)}\,w(t)p.
+\end{equation}
+三边$\rho=0.0031$、$p=1$。当前三条CZ时长约30.642、56.371、64.820 ns，详细参数见附录\ref{app:parameters}。
+\datafig{27_waveform}{R5下行微波包络、频率与耦合轨迹。图省略快速载波，不代表相位为零。积分步长0.1 ns，绘图采样约0.5 ns。}{fig:waveform}
+
+\subsection{虚拟相位是参考帧更新}
+每条线维护软件缓冲$(f_{01},f_{12})$。01门使用轴$\phi+f_{01}$，12门使用$\phi+f_{12}$。\code{frame(phi)}同时更新两者；\code{frame_01}、\code{frame_12}只更新相应跃迁。单门和CZ的原生补偿也自动累计到缓冲。
+
+去掉已知空闲参考旋转后，对应的逻辑帧定义是
+\begin{equation}\label{eq:frame}
+ F(f_{01},f_{12})=\diag(1,e^{-if_{01}},e^{-i(f_{01}+f_{12})},e^{-i(f_{01}+2f_{12})}).
+\end{equation}
+普通帧$\phi$在012空间为$\diag(1,e^{-i\phi},e^{-2i\phi})$，不是任意指定两个能级相位。R5的V展开需要两跃迁缓冲。它们是后续驱动参考更新，不是瞬间物理Z踢；拼接模块不能重置帧，也不能重复加入已由门库实施的补偿。
+
+\subsection{整树是局域脉冲导出的模块过程}
+局域门先经四能级波形积分，再作为有效过程嵌入整树。模块外搬运、QPU、跨片与存储门仍为理想01过程延拓；四个经典基态存储作精确条件变量。量子传播显式保留13个四能级站点，主结果使用最大bond 128的张量网络。
+
+因此后文数字应称为\textbf{局域脉冲导出的整机相干基线}，而非17体连续全波形结果。尚无一套满足全部共享端口频率的17位Hamiltonian，也没有把所有接口门换成真实脉冲。该边界限制了对外部泄露和真机精度的解释。
+\FloatBarrier
+
+\section{先检查单节点：人口、相干与实际往返}\label{sec:local}
+\subsection{临时2态不等于最终泄露}
+编码会主动占据2态。图\ref{fig:temporary}对真空入口显示原生层边界人口；$P_2$中途接近1可以是设计动作。应判断末态是否回到规定逻辑像空间，以及返回时相位是否正确，而不能把这段曲线直接称为100\%泄露错误。
+\datafig{13_temporary_level2}{临时2态占据，仅采样原生层边界，不是CZ内部瞬时峰值。此模型没有耗散帮助复位。}{fig:temporary}
+
+\subsection{连续控制与16态互相补充}
+固定$I=1,L=R=0$，将控制从0连续变化到1：
+\begin{equation}
+ \ket{\psi_C(\theta)}=\cos(\theta/2)\ket0+\sin(\theta/2)\ket1.
+\end{equation}
+理想输出是$\cos(\theta/2)\ket{0010}+\sin(\theta/2)\ket{1001}$，因此左右端$P_1$分别为$\cos^2(\theta/2)$和$\sin^2(\theta/2)$。101个角度共用同一套冻结波形。
+\datafig{12_control_sweep}{连续控制扫描的四位末态人口。平滑分流说明路径合理，相干性还需联合态与通道检查，不能单由人口推出。}{fig:sweep}
+
+C与I各取$\{0,1,+,-\}$形成16初态。down比较CLR联合态；up从理想合法像返回CI；实际往返使用真实down输出接真实up。表\ref{tab:localresults}另外保留完整四线合法块的过程$\Fe$，不能与约化态重叠混为一谈。
+\input{tables/local_results.tex}
+\datafig{10_local_truth}{局域四列合法基态的转移人口。up列为理想合法像；行列以逻辑CI标签标记。未按列归一，缺失可以是高能级，也可以是错误01态。}{fig:localtruth}
+\datafig{11_local_states}{16态原始目标重叠：down、独立合法入口up及实际down接实际up。全部为直接传播，不含有限shots或读出模型。}{fig:localstates}
+
+局域下行约99.6\%，实际往返略低，且两方案排序随检验方向改变。额外一个CZ不是唯一因素，回程、分支相位与相干干涉同样决定表现。原上行参数标定的相干目标是匹配down准备的往返；这里另外计算独立up，不把原标定说成独立up全面优化。
+
+\subsection{配对修正的消融证据}
+固定CZ和端点帧，移除R5的两个配对V，不重新优化其他参数。$CI=11$的完整四线目标人口由\RfivePairPop{}降为\RfiveNoPairPop{}，合法块$\Fe$由\RfiveLocalFe{}降为\RfiveNoPairFe{}。
+\datafig{14_paired_ablation}{R5配对消融，与式\eqref{eq:pairnormal}、\eqref{eq:pairaux}对应。配对恢复当前辅助路径的目标旋转，没有新增CZ；该消融不证明所有无配对构造都不可能。}{fig:pairablation}
+\FloatBarrier

@@ -1,0 +1,33 @@
+{
+  "profile": "independent_four_transmon_reference",
+  "provenance": "Synthetic extension of the saved Fredkin model, NOT fitted chip data. The fourth oscillator has independent frequency and anharmonicity.",
+  "wire_order": ["c", "i", "l", "r"],
+  "physical_labels": ["q111", "q121", "q130", "q112"],
+  "frequencies_ghz": [4.6, 5.0, 5.5, 5.65],
+  "anharmonicities_ghz": [-0.22, -0.22, -0.22, -0.235],
+  "rotating_frequency_ghz": 5.0,
+  "rho": [0.0031, 0.0031, 0.0031],
+  "edges": [[0, 1], [1, 2], [1, 3]],
+  "single_duration_ns": 32.0,
+  "x12_duration_ns": 40.0,
+  "readout_p0_given_level": [[0.97, 0.04, 0.08, 0.08], [0.965, 0.045, 0.075, 0.075], [0.975, 0.035, 0.085, 0.085], [0.96, 0.05, 0.08, 0.08]],
+  "cz_seeds": [
+    {"edge": [0, 1], "tuning_wire": 1, "frequency_ghz": 4.81893772, "duration_ns": 30.64183, "ramp_ns": 5.72593},
+    {"edge": [1, 2], "tuning_wire": 2, "frequency_ghz": 5.24427859, "duration_ns": 56.37132, "ramp_ns": 11.89451},
+    {"edge": [1, 3], "tuning_wire": 3, "frequency_ghz": 5.26, "duration_ns": 56.0, "ramp_ns": 11.0}
+  ],
+  "assumptions": [
+    "Exchange RWA, four Duffing oscillators, truncation checked at 3/4/5 levels.",
+    "Selected coupling is raised-cosine ramped; other couplings are zero in the reference run.",
+    "No decoherence, control crosstalk, flux distortion, or measurement crosstalk in the reference run.",
+    "Native gate post-phase corrections are implemented by future drive-phase buffers, not ideal diagonal kicks before CZ.",
+    "Binary discriminator parameters are synthetic. Level 3 is indistinguishable from level 2 in this binary model."
+  ],
+  "historical_partial_chip_parameters_not_used": {
+    "source": "2026-09-15 compiler log; NOT confirmed current configuration",
+    "q111": {"f01_ghz": 5.022799, "f12_ghz": 4.798472},
+    "q121": {"f01_ghz": 4.757629, "f12_ghz": 4.527409},
+    "q130": {"f01_ghz": 4.998246, "f12_ghz": 4.772465},
+    "q112": null
+  }
+}

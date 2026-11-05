@@ -1,0 +1,8 @@
+# Numerical/plotting versions used by the frozen coherent baseline (Python 3.10).
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.9
+threadpoolctl==3.6.0
+Pillow==12.3.0
+# PDF text validation/finalization; simulation itself does not require TeX.
+pypdf==6.10.0

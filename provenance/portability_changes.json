@@ -1,0 +1,7 @@
+{
+  "unchanged": "All propagation kernels, pulse_model, frozen numerical JSON, circuit protocols, and baseline NPZ files are copied byte-for-byte.",
+  "adapted": {
+    "PulseExperimentBackend shot seed": "New optional recalibration uses a relative circuit directory key, independent of the extraction path. Saved frozen baseline parameters are unchanged.",
+    "handoff/README": "Portable root commands and local source-document links replace machine-specific instructions."
+  }
+}

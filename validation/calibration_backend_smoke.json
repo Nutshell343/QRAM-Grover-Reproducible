@@ -1,0 +1,8 @@
+{
+  "pulse_backend_executed": true,
+  "shots_each": 1000,
+  "two_output_roots_same_seed_counts": true,
+  "hardware_framework_imported": false,
+  "workflow_source_hash": "4205b4c09c89fedce6b66a14f445fcb14b3b453f75e3aeadf203529e275f42c5",
+  "note": "One preparation/readout job checked; optional full waveform reoptimization/calibration suite not rerun."
+}

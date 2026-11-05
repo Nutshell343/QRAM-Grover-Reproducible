@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "clean_venv_installed_from_requirements": true,
+  "original_PYTHONPATH_cleared": true,
+  "user_site_packages_disabled": true,
+  "relocated_to_new_chinese_space_path": true,
+  "platform": "Windows x64, Python 3.10.20",
+  "full_case_count": 32,
+  "max_case_metric_difference": 0.0,
+  "max_case_Choi_difference": 0.0,
+  "ideal_max_matrix_error": 8.482556806932493e-15,
+  "fresh_figure_count": 25,
+  "native_node_SVGs": 4,
+  "full_schedules_1_2_3_levels": 6,
+  "effective_operator_count": 108,
+  "local_tracking_and_convergence": {
+    "local.npz": 0.0,
+    "tracking.npz": 0.0,
+    "pulse_convergence.json": "identical parsed JSON",
+    "scaling.json": "identical parsed JSON",
+    "resources.json": "identical parsed JSON"
+  },
+  "full_elapsed_seconds": 168.395514799995,
+  "all_project_imports_within_relocated_bundle": true,
+  "reference_input_files_unmodified": true,
+  "optional_calibration_scope": "one pulse backend shot job and relocation-invariant seeds checked; full waveform reoptimization not rerun",
+  "other_physical_computers_or_OS_tested": false
+}

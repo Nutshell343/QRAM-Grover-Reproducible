@@ -1,0 +1,11 @@
+{
+  "scope": "Circuit feasibility only; coherent propagation; all added stochastic, preparation and readout errors OFF",
+  "H_decomposition": "chronological Y01(pi/2), X01(pi); equals -i H on 01",
+  "source_sha256": {
+    "DistributedGroverNoDecoherence20261102\\feasibility_data.py": "d8a4701217356588d0bcdae899198d37acb12e46e3fb73f3d1d3ebbed3e4a91c",
+    "DistributedGroverSimulation20261102\\model.py": "58fb2962ccbd12255e6e7737ac9281d2e2bc398c82313cdf47c935ce8589365d",
+    "DistributedGroverSimulation20261102\\mps.py": "db3dd1fdc7f8ea83b9c1490866e65f61574f8b232d4aba57b3dae72678a294fd",
+    "DistributedGroverSimulation20261102\\circuit.py": "aebb7a702942f5465ddba5a7e28169cb027ad596fb713578f44c5d5abf73a41b",
+    "DistributedGroverSimulation20261102\\runner.py": "33228cc2facaa54ca214415c181531152bbdd1312cd605e7fb78b2f37e039c66"
+  }
+}

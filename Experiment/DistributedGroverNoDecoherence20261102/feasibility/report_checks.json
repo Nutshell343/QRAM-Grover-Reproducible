@@ -1,0 +1,18 @@
+{
+  "pages": 36,
+  "figures": 25,
+  "bookmarks": 35,
+  "pdf_sha256": "fb438d4e8d74420f13ac31bce4b56e9d4d52ed01f22336e29fd37381ae0fe6ac",
+  "bytes": 4000245,
+  "all_pages_rendered_and_visually_reviewed": true,
+  "no_missing_glyphs": true,
+  "no_blank_or_shifted_pages": true,
+  "physical_source_hashes_match": true,
+  "report_scope": "Native ideal circuit and coherent propagation only",
+  "report_source_sha256": {
+    "feasibility_checks.py": "7dc93412e3b4bde57b61e330e80ef00f25b4b07d6c94f2c89380aa423fe6d3e8",
+    "feasibility_data.py": "d8a4701217356588d0bcdae899198d37acb12e46e3fb73f3d1d3ebbed3e4a91c",
+    "feasibility_plots.py": "85eae612248dd09683afa7bcff665bc7ad63acde7df593be95c294156e6b670d",
+    "feasibility_report.py": "540a87fc7f881f8b706aa68d86d344b91c2ff614ff7248a16cb65ebcb9322d5e"
+  }
+}

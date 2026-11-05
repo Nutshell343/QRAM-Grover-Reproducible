@@ -1,0 +1,2297 @@
+[
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [],
+    "stage": "prepare",
+    "index": 0
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 1
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_load",
+    "index": 2
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 3
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 4
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "A0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_load",
+    "index": 5
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 6
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 7
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_load",
+    "index": 8
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 9
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 10
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "address_load",
+    "index": 11
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 12
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 13
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "address_load",
+    "index": 14
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 15
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 16
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "address_load",
+    "index": 17
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 18
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 19
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_load",
+    "index": 20
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 21
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 22
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "A0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_load",
+    "index": 23
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 24
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 25
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_load",
+    "index": 26
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_load",
+    "index": 27
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_load",
+    "index": 28
+  },
+  {
+    "duration": 50.0,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "C0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "address_load",
+    "index": 29
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_load",
+    "index": 30
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_load",
+    "index": 31
+  },
+  {
+    "duration": 50.0,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "C0",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "address_load",
+    "index": 32
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_load",
+    "index": 33
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_load",
+    "index": 34
+  },
+  {
+    "duration": 50.0,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "C0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "address_load",
+    "index": 35
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_load",
+    "index": 36
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_encode",
+    "index": 37
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_pi",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4d5760677055d8a2acff3cdc51ee60013675132cfc397cbe40d84e1c47721adc",
+        "error": "single"
+      }
+    ],
+    "stage": "data_encode",
+    "index": 38
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "data_load",
+    "index": 39
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "data_load",
+    "index": 40
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_load",
+    "index": 41
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "data_load",
+    "index": 42
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "data_load",
+    "index": 43
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_load",
+    "index": 44
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "data_load",
+    "index": 45
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "data_load",
+    "index": 46
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_load",
+    "index": 47
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "800e04cdaa631342408a37e3ba7d76b1ce740f448a1fad9bcf160c7107e5710a",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 48
+  },
+  {
+    "duration": 40.0,
+    "ops": [
+      {
+        "name": "12_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "9ec4eb3e1bc0faec476df46e678cf4019031249a84d140a2574535704433d0b8",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 49
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "241da106fbe26c5ba3ae98f41bd99c7429874a9de1e1ce0e8532ccc9914c762e",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 50
+  },
+  {
+    "duration": 30.6418337830458,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "C0",
+          "T0"
+        ],
+        "operator_sha256": "f5b99d8fe582c202a60f4d34664e65435f7bfd4488ab39a13fa95dd1484a558e",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_down",
+    "index": 51
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "c1b818908f7a13c5243dc46e3a2881280f174d01cb32cc536f7cb4005c3e1ed4",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 52
+  },
+  {
+    "duration": 40.0,
+    "ops": [
+      {
+        "name": "12_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "e8ced498ea67ea4090c6718fd214eb3b4885479925087f72d62fe5f6015790ac",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 53
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "13e344ccb98bdb750989f3360279c2e1971a78afcd3f796fa5de50c795499b8a",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 54
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4ece645a9c32e9c27fe0307e838f6281c57a0f0603935a273b5e202d344b4576",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 55
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "1276d30787fbdbc0139266d1069c8e349861c42b43ca3463ac9520faa078df35",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "81959cdb170d00eb0fddc05f5b7025e28f5013d82370f78bae0c2dd9f6b47b0b",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 56
+  },
+  {
+    "duration": 56.37131052662326,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L0"
+        ],
+        "operator_sha256": "337f0512c7d620bcc236a8f3c4301c82053fecb3c4255e2c40a2a6916dad37cb",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_down",
+    "index": 57
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "be43c70d3336398c89c45012e5ea309707ca8347d23c6737ef72e028cd97bb58",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "2c61bfa6915797bf35a8497a680bf348a81dbdbf42e9cb8d66a43e0ebdeda96c",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 58
+  },
+  {
+    "duration": 56.37131052662326,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L0"
+        ],
+        "operator_sha256": "a8b7c8236916265e68beb27db21a2953d496d5eca58314304d1b262df355db35",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_down",
+    "index": 59
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "e97fb40853527a14c5dc47854c0f9bc0b5ee9979e2733655e0e9842074610653",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "008d1bc73dc38407296d1d239872e3235f4fc70db1308e9e0530f0aff7239d71",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 60
+  },
+  {
+    "duration": 40.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "d68a4f63fe19280623a45f22a0c8cd3cf2a9e14919bbff44ebaf8bb4908c79bc",
+        "error": "local"
+      },
+      {
+        "name": "12_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "21e7f063eab7f4b3d4b55d82cfc8454e3e476e95c2a06ca419df15ba2cd724bc",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "L1"
+        ],
+        "operator_sha256": "0855d5264c323ff83433c5fbebd6023d332314802f9b7ef1d4b05ea2007d9cdb",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 61
+  },
+  {
+    "duration": 64.82045665163612,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L1"
+        ],
+        "operator_sha256": "10db80efcd1ded42a5bced6723f401db098d45965762cda8864cac6e2200443f",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_down",
+    "index": 62
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "L1"
+        ],
+        "operator_sha256": "363d48af456fd4407d583e82fcf5e1497c3dcfc58629a280c15b37b978c13b99",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "b81877e0e7d03d0c4145b0618710d83902f89ba506e5a13ab5ee6b41cd80b049",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 63
+  },
+  {
+    "duration": 64.82045665163612,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L1"
+        ],
+        "operator_sha256": "a722f41229f1e61873e3da801c5ad43aa1c7204e9ec80403e94e4762ef367f65",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_down",
+    "index": 64
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "c055da2b5163882bbee74b06ceda8c652b5896d51e1c58ae8f640a2c519345d6",
+        "error": "local"
+      },
+      {
+        "name": "frame",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "dfa9ebf44421f3906475bf802aa572ccd11a34882ae6d47ca3b5f6951b3a521c",
+        "error": "local"
+      },
+      {
+        "name": "frame",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "dcbd246a3089972005ce3338a329c5593ba47de068baa21c6bbfd0364f5fa2e8",
+        "error": "local"
+      },
+      {
+        "name": "frame",
+        "wires": [
+          "L1"
+        ],
+        "operator_sha256": "d4b96a64ba583ddae81f5f33215b9c3166b4fb84e1637eebc3376d172fbef089",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_down",
+    "index": 65
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "memory_cz",
+        "wires": [
+          "L0"
+        ],
+        "memory": 0,
+        "error": "memory"
+      },
+      {
+        "name": "memory_cz",
+        "wires": [
+          "L1"
+        ],
+        "memory": 1,
+        "error": "memory"
+      }
+    ],
+    "stage": "memory_access",
+    "index": 66
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "ace3cd53069f8305a596cb76354b3d4302edce32db4db2f66c0dcc3e4a3f5b04",
+        "error": "local"
+      },
+      {
+        "name": "frame",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "7acad1dd61445ad656cf89e2a595bcc662d125493df9fd8d69a301affc5b891b",
+        "error": "local"
+      },
+      {
+        "name": "frame",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "e83e0782501a5bb40ea56be9639c460dd68ff4167a6afd63564663e244a49de2",
+        "error": "local"
+      },
+      {
+        "name": "frame",
+        "wires": [
+          "L1"
+        ],
+        "operator_sha256": "4c149328a66b31aa4c8d97ac2c7cf77714786092672d286e12dd320f5f0ba924",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 67
+  },
+  {
+    "duration": 64.82045665163612,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L1"
+        ],
+        "operator_sha256": "be6f4ba0e93351bf5e2c8fa2f956c2a1cabfb47b5af7d6046cfd80a5cc02a776",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_up",
+    "index": 68
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "035598ead1e0bb4ebf9a3303ec9ef2f0871a2d4241cc160635e92361bdc749b3",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "L1"
+        ],
+        "operator_sha256": "c1e88cab36246a1a3d02f90021ebc3ac3d9af4ba38af1510f69d08a35bf9b96b",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 69
+  },
+  {
+    "duration": 64.82045665163612,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L1"
+        ],
+        "operator_sha256": "cfb16024b60e35e9276a0188cfc1d2323c016d62ae626b51fcc69afa511368a6",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_up",
+    "index": 70
+  },
+  {
+    "duration": 40.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "L1"
+        ],
+        "operator_sha256": "65df7f5c93d589b90bb21fca45188b7f0bc51521f1ab4ab3fcd395887e4e3577",
+        "error": "local"
+      },
+      {
+        "name": "12_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "85a556d90fe8ce3a334519ebe203376e5282c6429ccd269516e084a1ddb4868f",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "9011b54ae81159b090620c5e50f0f435400023ac4c5d9e1c76390f4e7c8058b7",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 71
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "7c3da32db0c6f3177400306bc2c4d7891813ca1d8840eea89b4579354ea5a358",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "2245a54bfa1028215c28100911a5e7f772480a29fbdb0c13081869eaa8bd771a",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 72
+  },
+  {
+    "duration": 56.37131052662326,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L0"
+        ],
+        "operator_sha256": "4aa8f8271261838e903fd7070de390993fd0a79bade5325c6b4647b217a6896b",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_up",
+    "index": 73
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "6c4aeda5ecfa279f4bbb8bb0ceff12df2e3f5d387c9d7c3177c026a34a189db7",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "73ab5c0b10630c2afdcd6951214cc5d678ad6f041d72c0d05509ffd727ca86eb",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 74
+  },
+  {
+    "duration": 56.37131052662326,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "L0"
+        ],
+        "operator_sha256": "af845b1f2b2f10564d3db74142abb370c632b117bccebae5a8bbc5ff2fb23834",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_up",
+    "index": 75
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "L0"
+        ],
+        "operator_sha256": "123496efd8b77386efa2e19d55942662c423e17471a3bdafe98d05112094d666",
+        "error": "local"
+      },
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "8f87678fcdebabe69f37e86a3827381314a19c51e2b302a27821c7135ff22027",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 76
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "faba918f4380ecf4f83818d30fbf7fcb6b20e7d2311791b64da8d2091e1c1a71",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 77
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "27567e2c3aa7c1ccfb1aae32b49a51bb3a525e4d330fbdaeff93271a02121c82",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 78
+  },
+  {
+    "duration": 40.0,
+    "ops": [
+      {
+        "name": "12_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "3bd8f912b64c999a26bfd4764a16278e941bf3cdc76c840afde2233749dd71b9",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 79
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "8725fa1c45030e0a15be3e13fdbd3517ae2935d760f7f292c7251d50f69cf845",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 80
+  },
+  {
+    "duration": 30.6418337830458,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "C0",
+          "T0"
+        ],
+        "operator_sha256": "ab935f87a3f993ebac8f35ffc4054bbbffa3dc692c5bcf8f4225dd03deb6bda2",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "data_up",
+    "index": 81
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "1fc463f9a1420f5b341add345db66c4bc236578122834a062b8424b615d5d63f",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 82
+  },
+  {
+    "duration": 40.0,
+    "ops": [
+      {
+        "name": "12_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "f221c45e1c64395cc5c437649162cd12f45d39711b576139509075cbeb486233",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 83
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_pi",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "7f7eea223f5ab01e3915f12d9f20ca41c15879552a7df976c0eb390eb8275416",
+        "error": "local"
+      }
+    ],
+    "kind": "single",
+    "stage": "data_up",
+    "index": 84
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "data_return",
+    "index": 85
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "data_return",
+    "index": 86
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_return",
+    "index": 87
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "data_return",
+    "index": 88
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "data_return",
+    "index": 89
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_return",
+    "index": 90
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "data_return",
+    "index": 91
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "data_return",
+    "index": 92
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_return",
+    "index": 93
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_unload",
+    "index": 94
+  },
+  {
+    "duration": 50.0,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "C0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "address_unload",
+    "index": 95
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_unload",
+    "index": 96
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_unload",
+    "index": 97
+  },
+  {
+    "duration": 50.0,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "C0",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "address_unload",
+    "index": 98
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_unload",
+    "index": 99
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_unload",
+    "index": 100
+  },
+  {
+    "duration": 50.0,
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "C0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "kind": "cz",
+    "stage": "address_unload",
+    "index": 101
+  },
+  {
+    "duration": 32.0,
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "C0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "kind": "single",
+    "stage": "address_unload",
+    "index": 102
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 103
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 104
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 105
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 106
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "A0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 107
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 108
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 109
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 110
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 111
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 112
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 113
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 114
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 115
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "T0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 116
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 117
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 118
+  },
+  {
+    "duration": 80.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "T0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "cross"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 119
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "T0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 120
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 121
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 122
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 123
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 124
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "D",
+          "A0"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 125
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "A0"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 126
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "823bbaa8ebd7d7ea754e5c3408ddca25baa8058cf395c6d6ea170b71c5d60b13",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 127
+  },
+  {
+    "duration": 50.0,
+    "kind": "cz",
+    "ops": [
+      {
+        "name": "cz",
+        "wires": [
+          "A0",
+          "D"
+        ],
+        "operator_sha256": "be567ca47f566112629982ddac0e7a9ceb77d3faeff615ca37330b23b2232f5d",
+        "error": "local"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 128
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "address_unload",
+    "index": 129
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_half",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4bb696c40df1a6ca86611a6f947b4d3f4819430e0387d53aa0b0e8dd96188db7",
+        "error": "single"
+      }
+    ],
+    "stage": "data_decode",
+    "index": 130
+  },
+  {
+    "duration": 32.0,
+    "kind": "single",
+    "ops": [
+      {
+        "name": "01_pi",
+        "wires": [
+          "D"
+        ],
+        "operator_sha256": "4d5760677055d8a2acff3cdc51ee60013675132cfc397cbe40d84e1c47721adc",
+        "error": "single"
+      }
+    ],
+    "stage": "data_decode",
+    "index": 131
+  }
+]

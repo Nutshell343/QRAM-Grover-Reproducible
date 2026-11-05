@@ -1,22 +1,7 @@
-# Generated simulation outputs; frozen reference results remain tracked.
+/.idea/
+/.venv/
+/venv/
+/.vscode/
 /runs/
-
-# Local Python environments and caches.
-.venv/
-venv/
 __pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Local editor and operating-system files.
-.idea/
-.vscode/
-.DS_Store
-Thumbs.db
-
-# Local credentials and environment settings.
-.env
-.env.*
-!.env.example
+*.pyc

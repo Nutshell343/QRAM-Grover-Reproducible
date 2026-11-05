@@ -1,0 +1,45 @@
+{
+  "scheme": "r5",
+  "direction": "down",
+  "bits": [
+    "q111",
+    "q121",
+    "q130",
+    "q112"
+  ],
+  "paired": {
+    "matrix": [
+      [
+        [
+          0.9230477828067046,
+          0.0
+        ],
+        [
+          -0.0011450495619116652,
+          -0.3846836096289097
+        ]
+      ],
+      [
+        [
+          0.2745447284215499,
+          -0.26945868468387507
+        ],
+        [
+          0.6485208851322659,
+          0.6568393037049745
+        ]
+      ]
+    ],
+    "source": "conditional i=2 four-input 01 process tomography; U(2) fit"
+  },
+  "angles": {
+    "c": 2.136814933097932,
+    "l": -0.1345071691515263,
+    "r": 2.34811460961458
+  },
+  "frame_position": "output c/l/r",
+  "readout_file": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\Experiment\\RouterPulseCalibration20261002\\results\\lab_equivalent_runs\\r5\\down\\pulse-L4-shots1000\\frozen\\readout_calibration.json",
+  "run_config_sha256": "9b73f374cd468051d73b3ac305fcc3180afd65aad13631678dbb2aecb900ad48",
+  "completed_utc": "2026-10-02T06:44:06.738856+00:00",
+  "up_coherence_scope": null
+}

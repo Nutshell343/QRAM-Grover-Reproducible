@@ -1,0 +1,61 @@
+\section{指标定义：原始、条件与联合量}\label{app:metrics}
+理想目标纯态$\ket\psi$的原始态重叠是$F=\bra\psi\rho\ket\psi$。局域down比较CLR约化态，up及往返比较CI；合法过程块保留完整四线目标像。若四维块K按目标/入口态排序，则
+\begin{equation}
+ \Fe^{\rm legal}=\frac{|\tr K|^2}{16},\qquad
+ P_{\rm image}=\frac14\tr(K^\dagger K).
+\end{equation}
+前者也检查相位，后者只看目标像人口，均未按列归一。
+
+完整query的全输出Choi态是$J_{\rm full}=(I\otimes\mathcal E)(\proj{\Phi_8})$；输出限制AD的01块后为J，迹$S\leq1$，泄露时它不归一。Haar平均原始目标态重叠为
+\begin{equation}
+ \overline F_{\rm Haar}=\frac{8\Fe+S}{9}.
+\end{equation}
+只有S为1才退化成常用迹保持形式。
+
+给定输入，真实辅助零投影$P_{\mathcal R0}$定义
+\begin{equation}
+ p_0=\tr(P_{\mathcal R0}\rho),\qquad
+ \rho_0=P_{\mathcal R0}\rho P_{\mathcal R0}/p_0.
+\end{equation}
+目标地址测量为$\Pi_a$时，三种成功指标分别为
+\begin{align}
+ p_{\rm raw}&=\tr(\Pi_a\rho),\\
+ p_{\rm cond}&=\tr(\Pi_a\rho_0),\\
+ p_{\rm joint}&=\tr(\Pi_aP_{\mathcal R0}\rho P_{\mathcal R0}).
+\end{align}
+Choi平均接受率与某算法输入接受率不同，不能混用。
+
+\clearpage\section{冻结参考参数与原生单门表}\label{app:parameters}
+以下来自已有模拟JSON，计算用全精度，表中四舍五入。参考标签q111/q121/q130/q112中q121是中心I；不是完整17角色硬件映射，也不是当前硬件上传值。
+
+附录末尾的四份局域门表中，$\phi_{\rm nom}$为协议相位；$\phi_{\rm buf}$为本地帧从零开始、累计补偿后的驱动轴，折回$[-\pi,\pi]$。它不含绝对载波，也不能直接当全局AWG相位。F类更新时长0；同层异位单门并行，层间隔离。
+\subsection{R5的配对矩阵与实现}
+\input{tables/paired_matrices.tex}
+对$V=e^{i\alpha}R_z(\beta)R_y(\theta)R_z(\gamma)$定义
+\begin{equation}
+ \widetilde Z(\delta):F_{01}(-\delta)\seq F_{12}(\delta/2).
+\end{equation}
+在012空间它等于嵌入$R_z(\delta)$乘公共相位。V的时间展开是
+\begin{equation}
+\begin{aligned}
+ &\widetilde Z(\gamma)\seq\widetilde Z(\pi/2)\seq Y_{01}/2\seq\widetilde Z(\theta)
+ \seq(-Y_{01}/2)\\
+ &\seq\widetilde Z(-\pi/2)\seq\widetilde Z(\beta)\seq F_{12}(\alpha).
+\end{aligned}
+\end{equation}
+末尾$F_{12}(\alpha)$维持01块相对2态的相位，不能丢弃。$V^\dagger$按矩阵重新分解；更高能级作用由原生展开与脉冲决定，不另假设恒等。
+
+\input{tables/native_parameters.tex}
+\input{tables/endpoint_parameters.tex}
+
+\clearpage\input{tables/native_r5_down.tex}
+\clearpage\input{tables/native_r5_up.tex}
+\clearpage\input{tables/native_r6_down.tex}
+\clearpage\input{tables/native_r6_up.tex}
+
+\section{工程组织与复现}\label{app:reproduce}
+主文件\code{main.tex}，正文分为\code{sections/}内五个源文件；\code{images/}含25张矢量图，\code{tables/}含JSON导出的数表，\code{data/}保留主要结果与冻结参数。XeLaTeX两遍可解析目录与引用，无需图片公式。
+
+\code{supplement/}保存R5/R6完整整网逐层Markdown及调度JSON，另有局域名义与缓冲相位JSON。主文宏观时间表和局域门表用于讲清逻辑，数百行完整执行表单独提供以便核对。
+
+上一级\code{prepare_latex_report.py}只导出数表、复制图及记录指纹，不下发实验、不重跑传播。正文源文件不被该脚本覆盖。完整数值入口、依赖和原始报告见上一级\code{README.md}。本版保留旧PDF，单独提供原生公式和重构叙述。

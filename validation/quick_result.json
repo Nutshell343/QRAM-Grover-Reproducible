@@ -1,0 +1,35 @@
+{
+  "elapsed_seconds": 27.290792300002067,
+  "result": {
+    "ideal_max_error": 8.482556806932493e-15,
+    "cases": [
+      {
+        "case": "r5_0010",
+        "metric_max_abs_error": 0.0,
+        "Choi_max_abs_error": 0.0,
+        "tolerance": 1e-06,
+        "passed": true,
+        "elapsed_seconds": 4.0484715000056894
+      },
+      {
+        "case": "r6_0010",
+        "metric_max_abs_error": 0.0,
+        "Choi_max_abs_error": 0.0,
+        "tolerance": 1e-06,
+        "passed": true,
+        "elapsed_seconds": 4.5162105000054
+      }
+    ],
+    "local": "C:\\Users\\qt_super\\Documents\\ChatGPT\\TCG\\tmp\\relocation_probe\\迁移 复现测试\\runs\\relocated-quick-v1\\feasibility\\local.json"
+  },
+  "project_imports": {
+    "feasibility_data": "Experiment/DistributedGroverNoDecoherence20261102/feasibility_data.py",
+    "model": "Experiment/DistributedGroverSimulation20261102/model.py",
+    "circuit": "Experiment/DistributedGroverSimulation20261102/circuit.py",
+    "mps": "Experiment/DistributedGroverSimulation20261102/mps.py",
+    "runner": "Experiment/DistributedGroverSimulation20261102/runner.py",
+    "pulse_model": "Experiment/RouterPulseCalibration20261002/pulse_model.py",
+    "bootstrap": "Experiment/RouterPulseCalibration20261002/bootstrap.py",
+    "validate_extra": "Experiment/DistributedGroverSimulation20261102/validate_extra.py"
+  }
+}

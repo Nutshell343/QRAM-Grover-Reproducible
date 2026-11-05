@@ -1,0 +1,390 @@
+{
+  "scheme": "r6",
+  "direction": "down",
+  "wires": [
+    "c",
+    "i",
+    "l",
+    "r"
+  ],
+  "paired_calibrated": null,
+  "operations": [
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        1,
+        2
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "01_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "12_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        0,
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "12_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        2,
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "12_pi",
+      "qubits": [
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        1,
+        2
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        2
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        3
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        1,
+        3
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        3
+      ],
+      "phase": 1.5707963267948966
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": -1.5707963267948966
+    },
+    {
+      "gate": "cz",
+      "qubits": [
+        3,
+        1
+      ],
+      "phase": 0.0
+    },
+    {
+      "gate": "01_half",
+      "qubits": [
+        1
+      ],
+      "phase": 1.5707963267948966
+    }
+  ],
+  "layers": [
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "12_pi",
+        "qubits": [
+          1
+        ],
+        "phase": 0.0
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          2
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          3
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          3
+        ],
+        "phase": 1.5707963267948966
+      },
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": -1.5707963267948966
+      }
+    ],
+    [
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          1
+        ],
+        "phase": 0.0
+      }
+    ],
+    [
+      {
+        "gate": "01_half",
+        "qubits": [
+          1
+        ],
+        "phase": 1.5707963267948966
+      }
+    ]
+  ],
+  "cz_count": 6,
+  "physical_layers": 19,
+  "constraint": "same-layer singles allowed; CZ never overlaps any single gate"
+}

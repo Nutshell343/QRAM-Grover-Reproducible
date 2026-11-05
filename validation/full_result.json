@@ -1,0 +1,17 @@
+{
+  "elapsed_seconds": 168.395514799995,
+  "result": {
+    "cases": 32,
+    "all_baseline_comparisons_passed": true
+  },
+  "project_imports": {
+    "feasibility_data": "Experiment/DistributedGroverNoDecoherence20261102/feasibility_data.py",
+    "model": "Experiment/DistributedGroverSimulation20261102/model.py",
+    "circuit": "Experiment/DistributedGroverSimulation20261102/circuit.py",
+    "mps": "Experiment/DistributedGroverSimulation20261102/mps.py",
+    "runner": "Experiment/DistributedGroverSimulation20261102/runner.py",
+    "pulse_model": "Experiment/RouterPulseCalibration20261002/pulse_model.py",
+    "bootstrap": "Experiment/RouterPulseCalibration20261002/bootstrap.py",
+    "validate_extra": "Experiment/DistributedGroverSimulation20261102/validate_extra.py"
+  }
+}
